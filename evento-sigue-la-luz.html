@@ -3,6 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ============================================================
+     PP-TRACKING-HEAD · Analítica (pega tus IDs y descomenta)
+     1) Google Tag Manager   2) GA4 directo   3) Meta Pixel
+     Recomendado: usa SOLO GTM y carga GA4 + Meta Pixel desde él.
+     ============================================================ -->
+<!-- (1) Google Tag Manager · sustituye GTM-XXXXXXX
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+<!-- (2) Google Analytics 4 (directo) · sustituye G-XXXXXXXXXX · úsalo solo si NO cargas GA4 desde GTM
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+<!-- (3) Meta Pixel · sustituye PIXEL_ID
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','PIXEL_ID');fbq('track','PageView');</script>
+-->
 <title>Sigue la Luz en Plaza Paraíso Torremolinos · Jue 13 Ago 2026 | Entradas</title>
 <meta name="description" content="Sigue la Luz en Plaza Paraíso Torremolinos: Un espectáculo único con Xenon Spain y Paca la Piraña que no se parece a nada que hayas visto. Jueves 13 de agosto de 2026, Plaza de Toros de Torremolinos. Entradas desde 18,00 €.">
 <meta name="keywords" content="sigue la luz, torremolinos, plaza paraiso, entradas, teatro, planes torremolinos, ocio malaga">
@@ -14,39 +29,69 @@
 <meta property="og:title" content="Sigue la Luz · Plaza Paraíso Torremolinos 2026">
 <meta property="og:description" content="Un espectáculo único con Xenon Spain y Paca la Piraña que no se parece a nada que hayas visto.">
 <meta property="og:url" content="https://www.plazaparaiso.com/evento-sigue-la-luz.html">
-<meta property="og:image" content="https://www.plazaparaiso.com/assets/img/sigue.jpg">
+<meta property="og:image" content="https://www.plazaparaiso.com/assets/opt/sigue.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sigue la Luz · Plaza Paraíso">
 <meta name="twitter:description" content="Un espectáculo único con Xenon Spain y Paca la Piraña que no se parece a nada que hayas visto.">
-<meta name="twitter:image" content="https://www.plazaparaiso.com/assets/img/sigue.jpg">
+<meta name="twitter:image" content="https://www.plazaparaiso.com/assets/opt/sigue.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231b2240'/><text x='50' y='50' dy='.34em' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='70' fill='%23f7ead5'>P</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="styles.css">
-<!-- ANALYTICS & TRACKING — paste your IDs and uncomment (GA4 + Meta Pixel). See index.html head for the full snippet. -->
+
 <script type="application/ld+json">
 {
   "@context":"https://schema.org","@type":"Event","name":"Sigue la Luz — Plaza Paraíso Torremolinos",
-  "startDate":"2026","description":"Un espectáculo único con Xenon Spain y Paca la Piraña que no se parece a nada que hayas visto.","image":"https://www.plazaparaiso.com/assets/img/sigue.jpg",
+  "startDate":"2026","description":"Un espectáculo único con Xenon Spain y Paca la Piraña que no se parece a nada que hayas visto.","image":"https://www.plazaparaiso.com/assets/opt/sigue.jpg",
   "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled",
   "location":{"@type":"Place","name":"Plaza de Toros de Torremolinos","address":{"@type":"PostalAddress","addressLocality":"Torremolinos","addressRegion":"Málaga","addressCountry":"ES"}},
   "offers":{"@type":"Offer","price":"18","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"https://www.plazaparaiso.com/entradas.html"}
 }
 </script>
+<!-- PP-JSONLD: breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.plazaparaiso.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Programa",
+      "item": "https://www.plazaparaiso.com/programa.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Sigue la Luz",
+      "item": "https://www.plazaparaiso.com/evento-sigue-la-luz.html"
+    }
+  ]
+}
+</script>
 </head>
 <body class="has-buybar ev--teatro" data-event-name="Sigue la Luz">
+<!-- PP-TRACKING-BODY · Google Tag Manager (noscript) · sustituye GTM-XXXXXXX
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+-->
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <input type="checkbox" id="nav-switch" class="visually-hidden" aria-hidden="true">
   <div class="nav container">
-    <a class="nav__logo" href="index.html" aria-label="Plaza Paraíso — inicio"><img src="assets/img/logo-cream.png" alt="Plaza Paraíso"></a>
+    <a class="nav__logo" href="index.html" data-track="nav-inicio" aria-label="Plaza Paraíso — inicio"><img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso"></a>
     <ul class="nav__links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="programa.html">Programa</a></li>
-      <li><a href="festival.html">El Festival</a></li>
-      <li><a href="faqs.html">FAQs</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="index.html" data-track="nav-inicio">Inicio</a></li>
+      <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
+      <li><a href="festival.html" data-track="nav-festival">El Festival</a></li>
+      <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
+      <li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
     </ul>
     <div class="nav__right">
       <div class="nav__socials">
@@ -54,7 +99,7 @@
         <a href="https://www.facebook.com/plazaparaisotorremolinos" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="https://www.tiktok.com/@plazaparaisotorremolinos?_r=1&_t=ZN-94vLUWIwgwI" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
       </div>
-      <a class="btn btn--primary" href="entradas.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg>Entradas</a>
+      <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg>Entradas</a>
       <label class="nav__burger nav__toggle" for="nav-switch" role="button" aria-label="Abrir menú" tabindex="0">
         <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         <svg class="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
@@ -62,26 +107,26 @@
     </div>
   </div>
   <nav class="nav__mobile" aria-label="Menú móvil">
-    <a href="index.html">Inicio</a><a href="programa.html">Programa</a><a href="festival.html">El Festival</a><a href="faqs.html">FAQs</a><a href="contacto.html">Contacto</a>
-    <a class="btn btn--primary" href="entradas.html">Comprar entradas</a>
+    <a href="index.html" data-track="nav-inicio">Inicio</a><a href="programa.html" data-track="nav-programa">Programa</a><a href="festival.html" data-track="nav-festival">El Festival</a><a href="faqs.html" data-track="nav-faqs">FAQs</a><a href="contacto.html" data-track="nav-contacto">Contacto</a>
+    <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas">Comprar entradas</a>
   </nav>
 </header>
 <main id="main">
 
   <section class="ev-hero" aria-labelledby="ev-title">
-    <div class="ev-hero__bg" aria-hidden="true"><img src="assets/img/sigue.jpg" alt="" fetchpriority="high"></div>
+    <div class="ev-hero__bg" aria-hidden="true"><img width="1080" height="1350" decoding="async" src="assets/opt/sigue.jpg" alt="" fetchpriority="high"></div>
     <div class="ev-hero__inner">
       <span class="ev-hero__cat">Teatro</span>
       <p class="ev-hero__kicker">Xenon Spain y Paca la Piraña</p>
       <h1 class="ev-hero__name" id="ev-title">Sigue la Luz</h1>
       <div class="ev-hero__meta">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>Jue 13 Ago</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Puertas 21:30 h</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Puertas 19:00 h</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Plaza de Toros · Torremolinos</span>
       </div>
       <div class="ev-hero__cta">
-        <a class="btn btn--primary btn--lg" href="https://site.fourvenues.com/es/locamente-creative/events/teatro---sigue-la-luz-con-xenon-spain-y-paca-la-pirana---torremolinos---plaza-paraiso-13-08-2026-0WXV" target="_blank" rel="noopener">Consigue tu entrada <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-        <a class="btn btn--ghost-cream btn--lg" href="programa.html">Ver programa</a>
+        <a class="btn btn--primary btn--lg" href="https://site.fourvenues.com/es/locamente-creative/events/teatro---sigue-la-luz-con-xenon-spain-y-paca-la-pirana---torremolinos---plaza-paraiso-13-08-2026-0WXV" data-track="compra-entrada" target="_blank" rel="noopener">Consigue tu entrada <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a class="btn btn--ghost-cream btn--lg" href="programa.html" data-track="nav-programa">Ver programa</a>
       </div>
     </div>
   </section>
@@ -115,7 +160,7 @@
     <div class="container">
       <div class="ev-info">
         <div class="ev-info__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg><div class="ev-info__k">Fecha</div><div class="ev-info__v">Jue 13 Ago</div></div>
-        <div class="ev-info__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div class="ev-info__k">Horario</div><div class="ev-info__v">21:30 h</div></div>
+        <div class="ev-info__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div class="ev-info__k">Horario</div><div class="ev-info__v">19:00 h</div></div>
         <div class="ev-info__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div class="ev-info__k">Lugar</div><div class="ev-info__v">Plaza de Toros</div></div>
         <div class="ev-info__cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg><div class="ev-info__k">Edad</div><div class="ev-info__v">+16</div></div>
       </div>
@@ -134,7 +179,7 @@
         <h2 class="section-title" id="fotos-title">Fotos del evento</h2>
       </div>
       <div class="ev-gallery">
-        <a class="ev-gallery__item" href="#lb-sigue-1"><img src="assets/img/sigue.jpg" alt="Sigue la Luz en Plaza Paraíso."></a>
+        <a class="ev-gallery__item" href="#lb-sigue-1"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/sigue.jpg" alt="Sigue la Luz en Plaza Paraíso."></a>
         <div class="ev-gallery__item ev-gallery__slot"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L9 20"/></svg></span><span>Añade una foto</span></div>
         <div class="ev-gallery__item ev-gallery__slot"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L9 20"/></svg></span><span>Añade una foto</span></div>
         <div class="ev-gallery__item ev-gallery__slot"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L9 20"/></svg></span><span>Añade una foto</span></div>
@@ -160,7 +205,7 @@
       </div>
       <a class="ev-video" href="#" aria-label="Ver el vídeo de Sigue la Luz en YouTube">
         <div class="ev-video__frame">
-          <img src="assets/img/sigue.jpg" alt="Avance en vídeo de Sigue la Luz en Plaza Paraíso.">
+          <img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/sigue.jpg" alt="Avance en vídeo de Sigue la Luz en Plaza Paraíso.">
           <span class="ev-video__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
           <span class="ev-video__tag">Ver vídeo</span>
         </div>
@@ -169,14 +214,14 @@
   </section>
 
   <section class="ev-quote" aria-hidden="true">
-    <div class="ev-quote__bg"><img src="assets/img/sigue.jpg" alt=""></div>
+    <div class="ev-quote__bg"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/sigue.jpg" alt=""></div>
     <div class="ev-quote__inner"><p>“Luz, color y mucho arte: un show que no se parece a nada.”</p></div>
   </section>
 
   <section class="section section--cream" aria-labelledby="buy-title">
     <div class="container">
       <h2 class="visually-hidden" id="buy-title">Entradas</h2>
-      <div class="ev-buy"><div class="ev-buy__price">Desde 18,00 € <small>+ tasas</small></div><p>Compra anticipada recomendada — las mejores noches del verano cuelgan el cartel de completo. Asegura tu sitio hoy.</p><a class="btn btn--primary btn--lg" href="https://site.fourvenues.com/es/locamente-creative/events/teatro---sigue-la-luz-con-xenon-spain-y-paca-la-pirana---torremolinos---plaza-paraiso-13-08-2026-0WXV" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg> Comprar entrada</a></div>
+      <div class="ev-buy"><div class="ev-buy__price">Desde 12,00 € <small>+ tasas</small></div><p>Compra anticipada recomendada — las mejores noches del verano cuelgan el cartel de completo. Asegura tu sitio hoy.</p><a class="btn btn--primary btn--lg" href="https://site.fourvenues.com/es/locamente-creative/events/teatro---sigue-la-luz-con-xenon-spain-y-paca-la-pirana---torremolinos---plaza-paraiso-13-08-2026-0WXV" data-track="compra-entrada" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg> Comprar entrada</a></div>
     </div>
   </section>
 
@@ -184,32 +229,32 @@
     <div class="container">
       <div class="section-head"><span class="eyebrow">Más planes este verano</span><h2 class="section-title" id="more-title">No te quedes solo con uno</h2></div>
       <div class="ev-more-grid">
-        <a class="ev-mini" href="evento-laura.html" aria-label="Laura Gallego — Vie 7 Ago">
-          <img src="assets/img/laura.jpg" alt="">
+        <a class="ev-mini" href="evento-laura.html" data-track="evento-laura" aria-label="Laura Gallego — Vie 7 Ago">
+          <img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/laura.jpg" alt="">
           <div class="ev-mini__body"><div class="ev-mini__name">Laura Gallego</div><div class="ev-mini__date">Vie 7 Ago</div></div>
         </a>
-        <a class="ev-mini" href="evento-bresh.html" aria-label="Bresh — Sáb 12 Sep">
-          <img src="assets/img/bresh.jpg" alt="">
+        <a class="ev-mini" href="evento-bresh.html" data-track="evento-bresh" aria-label="Bresh — Sáb 12 Sep">
+          <img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/bresh.jpg" alt="">
           <div class="ev-mini__body"><div class="ev-mini__name">Bresh</div><div class="ev-mini__date">Sáb 12 Sep</div></div>
         </a>
-        <a class="ev-mini" href="evento-loco-bongo.html" aria-label="Loco Bongo — Sábados">
-          <img src="assets/img/locobongo.jpg" alt="">
+        <a class="ev-mini" href="evento-loco-bongo.html" data-track="evento-loco-bongo" aria-label="Loco Bongo — Sábados">
+          <img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/locobongo.jpg" alt="">
           <div class="ev-mini__body"><div class="ev-mini__name">Loco Bongo</div><div class="ev-mini__date">Sábados</div></div>
         </a>
-        <a class="ev-mini" href="evento-las-pilardos.html" aria-label="Las Pilardos — Vie 21 Ago">
-          <img src="assets/img/pilardos.jpg" alt="">
+        <a class="ev-mini" href="evento-las-pilardos.html" data-track="evento-las-pilardos" aria-label="Las Pilardos — Vie 21 Ago">
+          <img width="1600" height="2000" decoding="async" loading="lazy" src="assets/opt/pilardos.jpg" alt="">
           <div class="ev-mini__body"><div class="ev-mini__name">Las Pilardos</div><div class="ev-mini__date">Vie 21 Ago</div></div>
         </a>
-        <a class="ev-mini" href="evento-furor.html" aria-label="Furor The Show — Domingos Ago">
-          <img src="assets/img/furor.jpg" alt="">
+        <a class="ev-mini" href="evento-furor.html" data-track="evento-furor" aria-label="Furor The Show — Domingos Ago">
+          <img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/furor.jpg" alt="">
           <div class="ev-mini__body"><div class="ev-mini__name">Furor The Show</div><div class="ev-mini__date">Domingos Ago</div></div>
         </a>
-        <a class="ev-mini" href="evento-little-italy.html" aria-label="Little Italy — 27–28 Ago">
-          <img src="assets/img/littleitaly.jpg" alt="">
+        <a class="ev-mini" href="evento-little-italy.html" data-track="evento-little-italy" aria-label="Little Italy — 27–28 Ago">
+          <img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/littleitaly.jpg" alt="">
           <div class="ev-mini__body"><div class="ev-mini__name">Little Italy</div><div class="ev-mini__date">27–28 Ago</div></div>
         </a>
       </div>
-      <div class="mt-7"><a class="btn btn--outline btn--lg" href="programa.html">Ver el programa completo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+      <div class="mt-7"><a class="btn btn--outline btn--lg" href="programa.html" data-track="nav-programa">Ver el programa completo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
     </div>
   </section>
 
@@ -223,7 +268,7 @@
   <div class="lightbox" id="lb-sigue-1" role="dialog" aria-label="Foto de Sigue la Luz ampliada">
     <a class="lightbox__backdrop" href="#fotos-title" aria-label="Cerrar"></a>
     <a class="lightbox__close" href="#fotos-title" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></a>
-    <img src="assets/img/sigue.jpg" alt="Sigue la Luz en Plaza Paraíso.">
+    <img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/sigue.jpg" alt="Sigue la Luz en Plaza Paraíso.">
   </div>
 
 </main>
@@ -232,7 +277,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <img src="assets/img/logo-cream.png" alt="Plaza Paraíso">
+        <img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso">
         <p>El punto de encuentro del verano en Torremolinos. Música, teatro, gastronomía y ocio al aire libre en la Plaza de Toros. Del 25 de julio al 13 de septiembre de 2026.</p>
         <div class="footer__socials">
           <a href="https://www.instagram.com/plazaparaisotorremolinos/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
@@ -241,7 +286,7 @@
         </div>
       </div>
       <div class="footer__col"><h4>Explora</h4><ul>
-        <li><a href="index.html">Inicio</a></li><li><a href="programa.html">Programa</a></li><li><a href="festival.html">El Festival</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="entradas.html">Comprar entradas</a></li><li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-track="nav-inicio">Inicio</a></li><li><a href="programa.html" data-track="nav-programa">Programa</a></li><li><a href="festival.html" data-track="nav-festival">El Festival</a></li><li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li><li><a href="entradas.html" data-track="cta-entradas">Comprar entradas</a></li><li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
       </ul></div>
       <div class="footer__col"><h4>Legal</h4><ul>
         <li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="privacidad.html">Política de privacidad</a></li><li><a href="cookies.html">Política de cookies</a></li><li><a href="#" data-cookie-settings>Preferencias de cookies</a></li>
@@ -258,8 +303,8 @@
 </footer>
 
 <div class="buybar" role="region" aria-label="Comprar entrada">
-  <div class="buybar__price"><b>Desde 18,00 €</b><small>+ tasas</small></div>
-  <a class="btn btn--primary btn--lg" href="https://site.fourvenues.com/es/locamente-creative/events/teatro---sigue-la-luz-con-xenon-spain-y-paca-la-pirana---torremolinos---plaza-paraiso-13-08-2026-0WXV" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg> Comprar entrada</a>
+  <div class="buybar__price"><b>Desde 12,00 €</b><small>+ tasas</small></div>
+  <a class="btn btn--primary btn--lg" href="https://site.fourvenues.com/es/locamente-creative/events/teatro---sigue-la-luz-con-xenon-spain-y-paca-la-pirana---torremolinos---plaza-paraiso-13-08-2026-0WXV" data-track="compra-entrada" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg> Comprar entrada</a>
 </div>
 
 <script src="gallery.js"></script>

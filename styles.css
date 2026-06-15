@@ -525,24 +525,17 @@ button { font-family: inherit; }
   background: linear-gradient(to top, rgba(17,22,44,.88) 0%, rgba(17,22,44,0) 58%);
 }
 .event-card__tag { position: absolute; top: 14px; left: 14px; z-index: 2; }
-.event-card .wave { position: absolute; bottom: 0; left: 0; z-index: 2; height: clamp(22px,3vw,32px); }
+.event-card .wave { position: absolute; bottom: 0; left: 0; z-index: 2; height: clamp(18px,2.4vw,26px); }
 .event-card__label {
-  position: absolute;
-  left: 50%;
-  bottom: 26px;
-  transform: translateX(-50%);
+  position: relative;
   z-index: 3;
-  width: max-content;
-  max-width: 88%;
   background: var(--cream-50);
-  border-radius: var(--radius-pill);
-  padding: 12px 22px;
+  padding: 10px 14px 12px;
   text-align: center;
-  box-shadow: var(--shadow-pill);
 }
-.event-card__kicker { font-size: var(--text-xs); font-weight: var(--fw-bold); color: var(--navy-500); text-transform: uppercase; letter-spacing: .08em; }
-.event-card__name { font-size: var(--text-lg); font-weight: var(--fw-black); color: var(--navy); text-transform: uppercase; line-height: 1.05; }
-.event-card__date { font-size: var(--text-sm); font-weight: var(--fw-extra); color: var(--orange); text-transform: uppercase; margin-top: 2px; }
+.event-card__kicker { font-size: 0.7rem; font-weight: var(--fw-bold); color: var(--navy-500); text-transform: uppercase; letter-spacing: .08em; }
+.event-card__name { font-size: var(--text-base); font-weight: var(--fw-black); color: var(--navy); text-transform: uppercase; line-height: 1.05; }
+.event-card__date { font-size: var(--text-xs); font-weight: var(--fw-extra); color: var(--orange); text-transform: uppercase; margin-top: 2px; }
 
 /* ============================================================
    12 · FILTER CHIPS (static anchors, programme)
@@ -814,7 +807,7 @@ button { font-family: inherit; }
 }
 @media (min-width: 600px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 920px) { .footer__grid { grid-template-columns: 1.6fr 1fr 1fr 1.2fr; } }
-.footer__brand img { height: 40px; margin-bottom: var(--space-4); }
+.footer__brand img { height: 40px; width: auto; margin-bottom: var(--space-4); }
 .footer__brand p { color: rgba(247,234,213,.72); font-size: var(--text-sm); max-width: 38ch; }
 .footer__socials { display: flex; gap: 14px; margin-top: var(--space-5); }
 .footer__socials a {
@@ -1111,7 +1104,7 @@ body.has-buybar { padding-bottom: 86px; }
 .buybar .btn { flex: 0 0 auto; }
 @media (min-width: 760px) {
   .buybar {
-    left: 50%; right: auto; transform: translateX(-50%);
+    left: 0; right: 0; margin-inline: auto;
     bottom: var(--space-4);
     width: fit-content; max-width: calc(100% - 2 * var(--gutter));
     justify-content: center; gap: var(--space-6);
@@ -1275,6 +1268,7 @@ body.has-buybar { padding-bottom: 86px; }
 .cat-hero__meta svg { width: 18px; height: 18px; }
 .cat-hero__cta { margin-top: var(--space-6); display: flex; gap: var(--space-4); flex-wrap: wrap; }
 .cat-hero__poster { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 6px solid rgba(255,255,255,.5); transform: rotate(-1.5deg); }
+.cat-hero__poster img { width: 100%; height: auto; display: block; }
 
 /* ============================================================
    35 · EVENT VIDEO (YouTube embed slot)
@@ -1306,6 +1300,11 @@ body.has-buybar { padding-bottom: 86px; }
   font-weight: var(--fw-extra); text-transform: uppercase; letter-spacing: .08em;
   font-size: var(--text-xs); padding: 7px 14px; border-radius: var(--radius-pill);
 }
+.ev-video-split { align-items: center; }
+.ev-synopsis p { color: var(--ink-soft); font-size: var(--text-md); line-height: 1.6; margin-bottom: var(--space-4); text-wrap: pretty; }
+.ev-synopsis p:last-child { margin-bottom: 0; }
+.ev-synopsis em { color: var(--navy); font-style: italic; font-weight: var(--fw-bold); }
+.ev-synopsis__q { font-family: var(--font-display); color: var(--ev-accent); font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.1; margin-top: var(--space-5); margin-bottom: 0; }
 
 /* ============================================================
    36 · EVENT PHOTO GALLERY (fill-in slots)

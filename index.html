@@ -3,6 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ============================================================
+     PP-TRACKING-HEAD · Analítica (pega tus IDs y descomenta)
+     1) Google Tag Manager   2) GA4 directo   3) Meta Pixel
+     Recomendado: usa SOLO GTM y carga GA4 + Meta Pixel desde él.
+     ============================================================ -->
+<!-- (1) Google Tag Manager · sustituye GTM-XXXXXXX
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+<!-- (2) Google Analytics 4 (directo) · sustituye G-XXXXXXXXXX · úsalo solo si NO cargas GA4 desde GTM
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+<!-- (3) Meta Pixel · sustituye PIXEL_ID
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','PIXEL_ID');fbq('track','PageView');</script>
+-->
 <title>Plaza Paraíso Torremolinos 2026 · Música, Teatro, Gastronomía y Ocio al aire libre</title>
 <meta name="description" content="Plaza Paraíso convierte la Plaza de Toros de Torremolinos en el punto de encuentro del verano: conciertos, teatro, gastronomía y ocio al aire libre del 25 de julio al 13 de septiembre de 2026. Entradas a la venta.">
 <meta name="keywords" content="plaza paraiso, torremolinos, planes torremolinos, ocio malaga, qué hacer en torremolinos, verano 2026, conciertos torremolinos, entradas">
@@ -28,32 +43,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="styles.css">
-
-<!-- =========================================================
-     ANALYTICS & TRACKING  ▸ paste your IDs and uncomment
-     ---------------------------------------------------------
-  Google Analytics 4
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-
-  Meta (Facebook) Pixel
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'YOUR_PIXEL_ID');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
-========================================================= -->
 
 <!-- Structured data: the festival -->
 <script type="application/ld+json">
@@ -81,8 +70,36 @@
   "organizer": { "@type": "Organization", "name": "Locamente", "url": "https://www.plazaparaiso.com/" }
 }
 </script>
+<!-- PP-JSONLD: identidad del sitio -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Plaza Paraíso Torremolinos",
+  "alternateName": "Plaza Paraíso",
+  "url": "https://www.plazaparaiso.com/",
+  "logo": "https://www.plazaparaiso.com/assets/img/logo-cream.png",
+  "sameAs": [
+    "https://www.instagram.com/plazaparaisotorremolinos/",
+    "https://www.facebook.com/plazaparaisotorremolinos",
+    "https://www.tiktok.com/@plazaparaisotorremolinos"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Plaza Paraíso Torremolinos",
+  "url": "https://www.plazaparaiso.com/",
+  "inLanguage": "es-ES"
+}
+</script>
 </head>
 <body>
+<!-- PP-TRACKING-BODY · Google Tag Manager (noscript) · sustituye GTM-XXXXXXX
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+-->
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <template id="__bundler_thumbnail" data-bg-color="#11162c">
@@ -98,15 +115,15 @@
 <header class="site-header">
   <input type="checkbox" id="nav-switch" class="visually-hidden" aria-hidden="true">
   <div class="nav container">
-    <a class="nav__logo" href="index.html" aria-label="Plaza Paraíso — inicio">
-      <img src="assets/img/logo-cream.png" alt="Plaza Paraíso">
+    <a class="nav__logo" href="index.html" data-track="nav-inicio" aria-label="Plaza Paraíso — inicio">
+      <img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso">
     </a>
     <ul class="nav__links">
-      <li><a href="index.html" aria-current="page">Inicio</a></li>
-      <li><a href="programa.html">Programa</a></li>
-      <li><a href="festival.html">El Festival</a></li>
-      <li><a href="faqs.html">FAQs</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="index.html" data-track="nav-inicio" aria-current="page">Inicio</a></li>
+      <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
+      <li><a href="festival.html" data-track="nav-festival">El Festival</a></li>
+      <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
+      <li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
     </ul>
     <div class="nav__right">
       <div class="nav__socials">
@@ -114,7 +131,7 @@
         <a href="https://www.facebook.com/plazaparaisotorremolinos" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="https://www.tiktok.com/@plazaparaisotorremolinos?_r=1&_t=ZN-94vLUWIwgwI" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
       </div>
-      <a class="btn btn--primary" href="entradas.html">
+      <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg>
         Entradas
       </a>
@@ -125,12 +142,12 @@
     </div>
   </div>
   <nav class="nav__mobile" aria-label="Menú móvil">
-    <a href="index.html">Inicio</a>
-    <a href="programa.html">Programa</a>
-    <a href="festival.html">El Festival</a>
-    <a href="faqs.html">FAQs</a>
-    <a href="contacto.html">Contacto</a>
-    <a class="btn btn--primary" href="entradas.html">Comprar entradas</a>
+    <a href="index.html" data-track="nav-inicio">Inicio</a>
+    <a href="programa.html" data-track="nav-programa">Programa</a>
+    <a href="festival.html" data-track="nav-festival">El Festival</a>
+    <a href="faqs.html" data-track="nav-faqs">FAQs</a>
+    <a href="contacto.html" data-track="nav-contacto">Contacto</a>
+    <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas">Comprar entradas</a>
   </nav>
 </header>
 
@@ -152,13 +169,14 @@
     </div>
     <div class="hero-cine__inner">
       <span class="eyebrow">25 Jul – 13 Sep · Torremolinos</span>
-      <img class="hero-cine__logo" src="assets/img/logo-cream.png" alt="Plaza Paraíso" id="hero-title">
+      <h1 class="visually-hidden" id="hero-title">Plaza Paraíso Torremolinos 2026 — música, teatro, gastronomía y ocio al aire libre en la Plaza de Toros</h1>
+      <img width="1980" height="1080" decoding="async" fetchpriority="high" class="hero-cine__logo" src="assets/img/logo-cream.png" alt="Plaza Paraíso">
       <div><a class="hero-cine__badge" href="#worlds-title" style="text-decoration:none;cursor:pointer;">Descubre el paraíso</a></div>
       <div class="hero-cine__cta">
-        <a class="btn btn--primary btn--lg" href="entradas.html">Consigue tu entrada
+        <a class="btn btn--primary btn--lg" href="entradas.html" data-track="cta-entradas">Consigue tu entrada
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
-        <a class="btn btn--ghost-cream btn--lg" href="programa.html">Ver el cartel</a>
+        <a class="btn btn--ghost-cream btn--lg" href="programa.html" data-track="nav-programa">Ver el cartel</a>
       </div>
     </div>
   </section>
@@ -178,50 +196,50 @@
         <h2 class="section-title" id="cartel-title">El programa</h2>
       </div>
       <div class="events-grid events-grid--four">
-        <a class="event-card" href="evento-bresh.html" aria-label="Bresh — Sábado 12 de septiembre">
+        <a class="event-card" href="evento-bresh.html" data-track="evento-bresh" aria-label="Bresh — Sábado 12 de septiembre">
           <span class="tag tag--musica event-card__tag">OCIO</span>
-          <div class="event-card__media"><img src="assets/img/bresh.jpg" alt="Bresh en directo con escenario rosa neón."></div>
+          <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/bresh.jpg" alt="Bresh en directo con escenario rosa neón."></div>
           <div class="wave" aria-hidden="true"></div>
           <div class="event-card__label"><div class="event-card__kicker">La fiesta más linda</div><div class="event-card__name">Bresh</div><div class="event-card__date">Sáb 12 Sep</div></div>
         </a>
-        <a class="event-card" href="evento-laura.html" aria-label="Laura Gallego — Viernes 7 de agosto">
+        <a class="event-card" href="evento-laura.html" data-track="evento-laura" aria-label="Laura Gallego — Viernes 7 de agosto">
           <span class="tag tag--musica event-card__tag">Música</span>
-          <div class="event-card__media"><img src="assets/img/laura.jpg" alt="Laura Gallego cantando en directo."></div>
+          <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/laura.jpg" alt="Laura Gallego cantando en directo."></div>
           <div class="wave" aria-hidden="true"></div>
-          <div class="event-card__label"><div class="event-card__kicker">Concierto</div><div class="event-card__name" style="font-size: 18px">Laura Gallego</div><div class="event-card__date">Vie 7 Ago</div></div>
+          <div class="event-card__label"><div class="event-card__kicker">Concierto</div><div class="event-card__name">Laura Gallego</div><div class="event-card__date">Vie 7 Ago</div></div>
         </a>
-        <a class="event-card" href="evento-loco-bongo.html" aria-label="Loco Bongo — Todos los sábados">
+        <a class="event-card" href="evento-loco-bongo.html" data-track="evento-loco-bongo" aria-label="Loco Bongo — Todos los sábados">
           <span class="tag tag--ocio event-card__tag">Ocio</span>
-          <div class="event-card__media"><img src="assets/img/locobongo.jpg" alt="Fiesta Loco Bongo con ambiente de verano."></div>
+          <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/locobongo.jpg" alt="Fiesta Loco Bongo con ambiente de verano."></div>
           <div class="wave" aria-hidden="true"></div>
-          <div class="event-card__label"><div class="event-card__kicker">Y especiales</div><div class="event-card__name" style="font-size: 18px">Loco Bongo</div><div class="event-card__date">SÁBADOS Y MÁS</div></div>
+          <div class="event-card__label"><div class="event-card__kicker">Y especiales</div><div class="event-card__name">Loco Bongo</div><div class="event-card__date">SÁBADOS Y MÁS</div></div>
         </a>
-        <a class="event-card" href="evento-las-pilardos.html" aria-label="Las Pilardos — Viernes 21 de agosto">
+        <a class="event-card" href="evento-las-pilardos.html" data-track="evento-las-pilardos" aria-label="Las Pilardos — Viernes 21 de agosto">
           <span class="tag tag--teatro event-card__tag">Teatro</span>
-          <div class="event-card__media"><img src="assets/img/pilardos.jpg" alt="Las Pilardos en Operación Marbella."></div>
+          <div class="event-card__media"><img width="1600" height="2000" decoding="async" loading="lazy" src="assets/opt/pilardos.jpg" alt="Las Pilardos en Operación Marbella."></div>
           <div class="wave" aria-hidden="true"></div>
-          <div class="event-card__label"><div class="event-card__kicker">Operación Marbella</div><div class="event-card__name" style="font-size: 18px">Las Pilardos</div><div class="event-card__date">Vie 21 Ago</div></div>
+          <div class="event-card__label"><div class="event-card__kicker">Operación Marbella</div><div class="event-card__name">Las Pilardos</div><div class="event-card__date">Vie 21 Ago</div></div>
         </a>
-        <a class="event-card" href="evento-furor.html" aria-label="Furor The Show — Domingos de agosto">
+        <a class="event-card" href="evento-furor.html" data-track="evento-furor" aria-label="Furor The Show — Domingos de agosto">
           <span class="tag tag--ocio event-card__tag">Ocio</span>
-          <div class="event-card__media"><img src="assets/img/furor.jpg" alt="Furor The Show en directo."></div>
+          <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/furor.jpg" alt="Furor The Show en directo."></div>
           <div class="wave" aria-hidden="true"></div>
-          <div class="event-card__label"><div class="event-card__kicker">con Alonso Caparrós</div><div class="event-card__name" style="font-size: 18px">Furor The Show</div><div class="event-card__date">Domingos Ago</div></div>
+          <div class="event-card__label"><div class="event-card__kicker">con Alonso Caparrós</div><div class="event-card__name">Furor The Show</div><div class="event-card__date">Domingos Ago</div></div>
         </a>
-        <a class="event-card" href="evento-sigue-la-luz.html" aria-label="Sigue la Luz — Jueves 13 de agosto">
+        <a class="event-card" href="evento-sigue-la-luz.html" data-track="evento-sigue-la-luz" aria-label="Sigue la Luz — Jueves 13 de agosto">
           <span class="tag tag--teatro event-card__tag">Teatro</span>
-          <div class="event-card__media"><img src="assets/img/sigue.jpg" alt="Espectáculo Sigue la Luz en el escenario."></div>
+          <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/sigue.jpg" alt="Espectáculo Sigue la Luz en el escenario."></div>
           <div class="wave" aria-hidden="true"></div>
           <div class="event-card__label"><div class="event-card__kicker">XENON SPAIN 
-Y PACA LA PIRAÑA</div><div class="event-card__name" style="font-size: 18px">Sigue la Luz</div><div class="event-card__date">Jue 13 Ago</div></div>
+Y PACA LA PIRAÑA</div><div class="event-card__name">Sigue la Luz</div><div class="event-card__date">Jue 13 Ago</div></div>
         </a>
-        <a class="event-card" href="evento-little-italy.html" aria-label="Little Italy Gastrofest — 27 y 28 de agosto">
+        <a class="event-card" href="evento-little-italy.html" data-track="evento-little-italy" aria-label="Little Italy Gastrofest — 27 y 28 de agosto">
           <span class="tag tag--gastro event-card__tag">Gastronomía</span>
-          <div class="event-card__media"><img src="assets/img/littleitaly.jpg" alt="Little Italy Gastrofest, festival de comida italiana."></div>
+          <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/littleitaly.jpg" alt="Little Italy Gastrofest, festival de comida italiana."></div>
           <div class="wave" aria-hidden="true"></div>
-          <div class="event-card__label"><div class="event-card__kicker">Italia Gastrofest</div><div class="event-card__name" style="font-size: 18px">Little Italy</div><div class="event-card__date">27–28 Ago</div></div>
+          <div class="event-card__label"><div class="event-card__kicker">Italia Gastrofest</div><div class="event-card__name">Little Italy</div><div class="event-card__date">27–28 Ago</div></div>
         </a>
-        <a class="event-card" href="programa.html" style="display:grid;place-items:center;background:var(--amber);" aria-label="Y más por confirmar — ver el programa">
+        <a class="event-card" href="programa.html" data-track="nav-programa" style="display:grid;place-items:center;background:var(--amber);" aria-label="Y más por confirmar — ver el programa">
           <div style="text-align:center;padding:var(--space-6);">
             <div class="strand__num" style="color:var(--red);font-size:var(--text-3xl);">+</div>
             <h3 style="text-transform:uppercase;color:var(--navy);font-size:var(--text-lg);margin-top:var(--space-2);">Y más por<br>confirmar</h3>
@@ -239,10 +257,10 @@ Y PACA LA PIRAÑA</div><div class="event-card__name" style="font-size: 18px">Sig
         <h2 class="section-title" id="worlds-title">Elige tu plan</h2>
       </div>
       <div class="worlds">
-        <a class="world world--musica" href="categoria-musica.html"><span class="world__index" aria-hidden="true">01</span><span class="world__word">Música</span><span class="world__sub">Conciertos en directo</span></a>
-        <a class="world world--teatro" href="categoria-teatro.html"><span class="world__index" aria-hidden="true">02</span><span class="world__word">Teatro</span><span class="world__sub">Comedia y show</span></a>
-        <a class="world world--gastro" href="categoria-gastronomia.html"><span class="world__index" aria-hidden="true">03</span><span class="world__word">Gastro</span><span class="world__sub">Sabores del verano</span></a>
-        <a class="world world--ocio" href="categoria-ocio.html"><span class="world__index" aria-hidden="true">04</span><span class="world__word">Ocio</span><span class="world__sub">Fiesta y planes</span></a>
+        <a class="world world--musica" href="categoria-musica.html" data-track="cat-musica"><span class="world__index" aria-hidden="true">01</span><span class="world__word">Música</span><span class="world__sub">Conciertos en directo</span></a>
+        <a class="world world--teatro" href="categoria-teatro.html" data-track="cat-teatro"><span class="world__index" aria-hidden="true">02</span><span class="world__word">Teatro</span><span class="world__sub">Comedia y show</span></a>
+        <a class="world world--gastro" href="categoria-gastronomia.html" data-track="cat-gastro"><span class="world__index" aria-hidden="true">03</span><span class="world__word">Gastro</span><span class="world__sub">Sabores del verano</span></a>
+        <a class="world world--ocio" href="categoria-ocio.html" data-track="cat-ocio"><span class="world__index" aria-hidden="true">04</span><span class="world__word">Ocio</span><span class="world__sub">Fiesta y planes</span></a>
       </div>
     </div>
   </section>
@@ -250,17 +268,17 @@ Y PACA LA PIRAÑA</div><div class="event-card__name" style="font-size: 18px">Sig
   <!-- FULL-BLEED PHOTO CTA -->
   <div class="wave" aria-hidden="true"></div>
   <section class="cta-photo" aria-labelledby="cta-title">
-    <div class="cta-photo__bg" aria-hidden="true"><img src="assets/img/plaza-llena.jpg" alt=""></div>
+    <div class="cta-photo__bg" aria-hidden="true"><img width="1800" height="2700" decoding="async" loading="lazy" src="assets/opt/plaza-llena.jpg" alt=""></div>
     <div class="cta-photo__inner">
       <span class="eyebrow eyebrow--cream">Plaza de Toros · Torremolinos</span>
       <h2 id="cta-title">Nos vemos<br>en la plaza</h2>
       <p>Las mejores noches del verano se viven aquí. 
 ¡Asegura tu sitio y hazte ya con tentrada!</p>
       <div class="cta-photo__cta">
-        <a class="btn btn--primary btn--lg" href="entradas.html">Comprar entradas
+        <a class="btn btn--primary btn--lg" href="entradas.html" data-track="cta-entradas">Comprar entradas
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
-        <a class="btn btn--ghost-cream btn--lg" href="programa.html">Ver el cartel</a>
+        <a class="btn btn--ghost-cream btn--lg" href="programa.html" data-track="nav-programa">Ver el cartel</a>
       </div>
     </div>
   </section>
@@ -280,7 +298,7 @@ Y PACA LA PIRAÑA</div><div class="event-card__name" style="font-size: 18px">Sig
           <h2 class="section-title" id="reels-title">Vívelo<br>antes de venir</h2>
           <p>Un vistazo a lo que te espera este verano en la Plaza de Toros de Torremolinos. Dale al play.</p>
           <div class="cta-photo__cta" style="margin-top:var(--space-6);">
-            <a class="btn btn--primary btn--lg" href="entradas.html">Consigue tu entrada
+            <a class="btn btn--primary btn--lg" href="entradas.html" data-track="cta-entradas">Consigue tu entrada
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
           </div>
@@ -288,7 +306,7 @@ Y PACA LA PIRAÑA</div><div class="event-card__name" style="font-size: 18px">Sig
         <div class="reels__phone">
           <input type="checkbox" id="reels-play" class="reels__toggle" aria-hidden="true">
           <label class="reels__cover" for="reels-play">
-            <img src="assets/img/reels-malaga.png" alt="Avance en vídeo: Málaga, Plaza Paraíso Torremolinos.">
+            <img width="746" height="1348" decoding="async" loading="lazy" src="assets/img/reels-malaga.png" alt="Avance en vídeo: Málaga, Plaza Paraíso Torremolinos.">
             <span class="reels__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
             <span class="reels__tag">Ver vídeo</span>
           </label>
@@ -305,12 +323,17 @@ Y PACA LA PIRAÑA</div><div class="event-card__name" style="font-size: 18px">Sig
     <div class="container">
       <span class="eyebrow eyebrow--cream">No te pierdas nada</span>
       <h2 id="news-form-title">Sigue en contacto</h2>
-      <form class="newsletter__form" action="#" method="post" aria-label="Suscripción al boletín">
+      <form id="form-newsletter" class="newsletter__form" data-track="newsletter" action="https://api.web3forms.com/submit" method="POST" aria-label="Suscripción al boletín">
+        <input type="hidden" name="access_key" value="4a2a4f68-5cba-4f4c-9d06-e0554cc0a600">
+        <input type="hidden" name="subject" value="Nueva suscripción al boletín · Plaza Paraíso (web)">
+        <input type="hidden" name="from_name" value="Web Plaza Paraíso">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
         <label class="visually-hidden" for="nl-email">Tu correo electrónico</label>
         <input type="email" id="nl-email" name="email" required placeholder="tucorreo@email.com" autocomplete="email">
-        <button type="submit" class="btn btn--primary">Suscribirme</button>
+        <button type="submit" id="btn-newsletter-submit" class="btn btn--primary" data-track="newsletter-submit">Suscribirme</button>
       </form>
       <p class="newsletter__note">Te avisamos de nuevos nombres del cartel, fechas y entradas.</p>
+      <p id="nl-status" role="status" aria-live="polite" class="newsletter__note" hidden></p>
     </div>
   </section>
 
@@ -321,7 +344,7 @@ Y PACA LA PIRAÑA</div><div class="event-card__name" style="font-size: 18px">Sig
       <div class="partners-band">
         <div class="partners-group">
           <h4>Organiza</h4>
-          <div class="partners-logos"><span class="partner-name"><span class="display">Locamente</span> · 10 años</span></div>
+          <div class="partners-logos"><span class="partner-name" style="display:inline-flex;align-items:center;gap:.3em;"><img src="assets/opt/locamente-logo.png" width="640" height="640" decoding="async" alt="Locamente" style="height:80px;width:auto;"> · 10 años</span></div>
         </div>
         <div class="partners-group">
           <h4>Con la colaboración de</h4>
@@ -337,7 +360,7 @@ Y PACA LA PIRAÑA</div><div class="event-card__name" style="font-size: 18px">Sig
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <img src="assets/img/logo-cream.png" alt="Plaza Paraíso">
+        <img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso">
         <p>El punto de encuentro del verano en Torremolinos. Música, teatro, gastronomía y ocio al aire libre en la Plaza de Toros. Del 25 de julio al 13 de septiembre de 2026.</p>
         <div class="footer__socials">
           <a href="https://www.instagram.com/plazaparaisotorremolinos/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
@@ -348,12 +371,12 @@ Y PACA LA PIRAÑA</div><div class="event-card__name" style="font-size: 18px">Sig
       <div class="footer__col">
         <h4>Explora</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="programa.html">Programa</a></li>
-          <li><a href="festival.html">El Festival</a></li>
-          <li><a href="faqs.html">FAQs</a></li>
-          <li><a href="entradas.html">Comprar entradas</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html" data-track="nav-inicio">Inicio</a></li>
+          <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
+          <li><a href="festival.html" data-track="nav-festival">El Festival</a></li>
+          <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
+          <li><a href="entradas.html" data-track="cta-entradas">Comprar entradas</a></li>
+          <li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
         </ul>
       </div>
       <div class="footer__col">
@@ -381,5 +404,47 @@ Y PACA LA PIRAÑA</div><div class="event-card__name" style="font-size: 18px">Sig
 </footer>
 
 <script src="cookies.js"></script>
+<script>
+/* Suscripción al boletín vía Web3Forms (AJAX, sin recargar) */
+(function () {
+  var form = document.getElementById("form-newsletter");
+  if (!form) return;
+  var status = document.getElementById("nl-status");
+  function show(msg, ok) {
+    status.hidden = false;
+    status.textContent = msg;
+    status.style.color = ok ? "var(--amber)" : "#ffd2d2";
+  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    var original = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = "Enviando…";
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { "Accept": "application/json" }
+    }).then(function (res) {
+      if (res.ok) {
+        form.reset();
+        show("¡Genial! Te has suscrito. Nos vemos en la plaza. ☀️", true);
+        if (window.plpTrack) window.plpTrack("generate_lead", { form: "newsletter" }, "Lead", { content_name: "Newsletter" });
+      } else {
+        res.json().then(function (d) {
+          show((d && d.message) || "No se ha podido completar. Inténtalo de nuevo.", false);
+        }).catch(function () {
+          show("No se ha podido completar. Inténtalo de nuevo.", false);
+        });
+      }
+    }).catch(function () {
+      show("No hay conexión. Inténtalo de nuevo.", false);
+    }).finally(function () {
+      btn.disabled = false;
+      btn.textContent = original;
+    });
+  });
+})();
+</script>
 </body>
 </html>

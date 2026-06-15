@@ -3,6 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ============================================================
+     PP-TRACKING-HEAD · Analítica (pega tus IDs y descomenta)
+     1) Google Tag Manager   2) GA4 directo   3) Meta Pixel
+     Recomendado: usa SOLO GTM y carga GA4 + Meta Pixel desde él.
+     ============================================================ -->
+<!-- (1) Google Tag Manager · sustituye GTM-XXXXXXX
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+<!-- (2) Google Analytics 4 (directo) · sustituye G-XXXXXXXXXX · úsalo solo si NO cargas GA4 desde GTM
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+<!-- (3) Meta Pixel · sustituye PIXEL_ID
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','PIXEL_ID');fbq('track','PageView');</script>
+-->
 <title>El Festival · Qué es Plaza Paraíso en Torremolinos | Verano 2026</title>
 <meta name="description" content="Plaza Paraíso transforma la histórica Plaza de Toros de Torremolinos en el punto de encuentro del verano 2026: música, teatro, gastronomía y ocio al aire libre. Organiza Locamente con el Ayuntamiento de Torremolinos.">
 <meta name="keywords" content="qué es plaza paraiso, plaza de toros torremolinos, planes torremolinos, ocio malaga, festival verano costa del sol">
@@ -14,11 +29,11 @@
 <meta property="og:title" content="El Festival · Plaza Paraíso Torremolinos">
 <meta property="og:description" content="La Plaza de Toros de Torremolinos se transforma en el punto de encuentro del verano. Descubre la historia y el espíritu del festival.">
 <meta property="og:url" content="https://www.plazaparaiso.com/festival.html">
-<meta property="og:image" content="https://www.plazaparaiso.com/assets/img/locobongo.jpg">
+<meta property="og:image" content="https://www.plazaparaiso.com/assets/opt/locobongo.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="El Festival · Plaza Paraíso">
 <meta name="twitter:description" content="Qué es Plaza Paraíso: el punto de encuentro del verano en Torremolinos.">
-<meta name="twitter:image" content="https://www.plazaparaiso.com/assets/img/locobongo.jpg">
+<meta name="twitter:image" content="https://www.plazaparaiso.com/assets/opt/locobongo.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231b2240'/><text x='50' y='50' dy='.34em' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='70' fill='%23f7ead5'>P</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,20 +54,66 @@
   "areaServed": "Torremolinos, Málaga, España"
 }
 </script>
+<!-- PP-JSONLD: breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.plazaparaiso.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "El Festival",
+      "item": "https://www.plazaparaiso.com/festival.html"
+    }
+  ]
+}
+</script>
+<!-- PP-JSONLD: recinto -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Plaza de Toros de Torremolinos",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Bulevar de San Miguel",
+    "addressLocality": "Torremolinos",
+    "addressRegion": "Málaga",
+    "postalCode": "29620",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.621,
+    "longitude": -4.4985
+  },
+  "url": "https://www.plazaparaiso.com/festival.html"
+}
+</script>
 </head>
 <body>
+<!-- PP-TRACKING-BODY · Google Tag Manager (noscript) · sustituye GTM-XXXXXXX
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+-->
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <input type="checkbox" id="nav-switch" class="visually-hidden" aria-hidden="true">
   <div class="nav container">
-    <a class="nav__logo" href="index.html" aria-label="Plaza Paraíso — inicio"><img src="assets/img/logo-cream.png" alt="Plaza Paraíso"></a>
+    <a class="nav__logo" href="index.html" data-track="nav-inicio" aria-label="Plaza Paraíso — inicio"><img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso"></a>
     <ul class="nav__links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="programa.html">Programa</a></li>
-      <li><a href="festival.html" aria-current="page">El Festival</a></li>
-      <li><a href="faqs.html">FAQs</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="index.html" data-track="nav-inicio">Inicio</a></li>
+      <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
+      <li><a href="festival.html" data-track="nav-festival" aria-current="page">El Festival</a></li>
+      <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
+      <li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
     </ul>
     <div class="nav__right">
       <div class="nav__socials">
@@ -60,7 +121,7 @@
         <a href="https://www.facebook.com/plazaparaisotorremolinos" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="https://www.tiktok.com/@plazaparaisotorremolinos?_r=1&_t=ZN-94vLUWIwgwI" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
       </div>
-      <a class="btn btn--primary" href="entradas.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg>Entradas</a>
+      <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg>Entradas</a>
       <label class="nav__burger nav__toggle" for="nav-switch" role="button" aria-label="Abrir menú" tabindex="0">
         <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         <svg class="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
@@ -68,12 +129,12 @@
     </div>
   </div>
   <nav class="nav__mobile" aria-label="Menú móvil">
-    <a href="index.html">Inicio</a>
-    <a href="programa.html">Programa</a>
-    <a href="festival.html">El Festival</a>
-    <a href="faqs.html">FAQs</a>
-    <a href="contacto.html">Contacto</a>
-    <a class="btn btn--primary" href="entradas.html">Comprar entradas</a>
+    <a href="index.html" data-track="nav-inicio">Inicio</a>
+    <a href="programa.html" data-track="nav-programa">Programa</a>
+    <a href="festival.html" data-track="nav-festival">El Festival</a>
+    <a href="faqs.html" data-track="nav-faqs">FAQs</a>
+    <a href="contacto.html" data-track="nav-contacto">Contacto</a>
+    <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas">Comprar entradas</a>
   </nav>
 </header>
 
@@ -97,10 +158,20 @@
           <p class="lead" style="margin-top:0;">Este verano 2026, la histórica Plaza de Toros de Torremolinos se convierte en el gran punto de encuentro de la cultura. Durante más de 50 días, su ruedo se llena de conciertos, teatro, gastronomía y ocio en un entorno único al aire libre, a un paso de la playa.</p>
           <p class="lead">Plaza Paraíso nace para locales de Torremolinos y Málaga, y para quienes pasan el verano en la Costa del Sol buscando planes diferentes. Una cita abierta, cercana y veraniega para vivir las mejores noches del verano.</p>
           <div class="hero__cta" style="justify-content:flex-start;">
-            <a class="btn btn--primary btn--lg" href="programa.html">Ver el programa</a>
+            <a class="btn btn--primary btn--lg" href="programa.html" data-track="nav-programa">Ver el programa</a>
           </div>
         </div>
-        <div class="media-frame"><img src="assets/img/locobongo.jpg" alt="Ambiente nocturno de fiesta al aire libre en Plaza Paraíso." style="aspect-ratio:4/5;"></div>
+        <div class="reels__phone">
+          <input type="checkbox" id="reels-play" class="reels__toggle" aria-hidden="true">
+          <label class="reels__cover" for="reels-play" aria-label="Reproducir el vídeo de Plaza Paraíso">
+            <img width="746" height="1348" decoding="async" loading="lazy" src="assets/img/reels-malaga.png" alt="Avance en vídeo: Plaza Paraíso Torremolinos.">
+            <span class="reels__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="reels__tag">Ver vídeo</span>
+          </label>
+          <div class="reels__embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/HpmsuDVCkMw?autoplay=1&rel=0&playsinline=1&modestbranding=1" title="Plaza Paraíso · Málaga" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -135,7 +206,7 @@
           <span class="tl-item__dot"></span>
           <div class="tl-item__date">Sáb 25 Jul</div>
           <h3>Apertura de temporada</h3>
-          <p>Loco Bongo abre Plaza Paraíso y enciende el verano. Empieza el ciclo de noches al aire libre en el ruedo.</p>
+          <p>Loco Bongo abre Plaza Paraíso y enciende el verano. Empieza el ciclo de tardes al aire libre en el ruedo.</p>
         </div>
         <div class="tl-item tl-item--musica">
           <span class="tl-item__dot"></span>
@@ -146,7 +217,7 @@
         <div class="tl-item tl-item--teatro">
           <span class="tl-item__dot"></span>
           <div class="tl-item__date">13–21 Ago</div>
-          <h3>Las tablas se llenan</h3>
+          <h3>EL TEATRO SE LLENA</h3>
           <p>Sigue la Luz, con Xenon Spain y Paca la Piraña, y Las Pilardos en Operación Marbella: show, comedia y mucho arte.</p>
         </div>
         <div class="tl-item tl-item--gastro">
@@ -165,7 +236,8 @@
           <span class="tl-item__dot"></span>
           <div class="tl-item__date">Dom 13 Sep</div>
           <h3>Cierre de verano</h3>
-          <p>Loco Bongo despide la primera edición de Plaza Paraíso. Nos vemos el próximo verano en la plaza.</p>
+          <p>Loco Bongo despide la primera edición de Plaza Paraíso. 
+Nos vemos el próximo verano en la plaza.</p>
         </div>
       </div>
     </div>
@@ -192,10 +264,10 @@
         <h2>Organiza Locamente</h2>
         <p>Plaza Paraíso está organizado por Locamente, que este año celebra 10 años, con la colaboración del Ayuntamiento de Torremolinos. Cultura local, hecha en la Costa del Sol.</p>
         <div class="hero__cta">
-          <a class="btn btn--primary btn--lg" href="entradas.html">Consigue tu entrada
+          <a class="btn btn--primary btn--lg" href="entradas.html" data-track="cta-entradas">Consigue tu entrada
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
-          <a class="btn btn--ghost-cream btn--lg" href="contacto.html">Contactar</a>
+          <a class="btn btn--ghost-cream btn--lg" href="contacto.html" data-track="nav-contacto">Contactar</a>
         </div>
       </div>
     </div>
@@ -207,7 +279,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <img src="assets/img/logo-cream.png" alt="Plaza Paraíso">
+        <img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso">
         <p>El punto de encuentro del verano en Torremolinos. Música, teatro, gastronomía y ocio al aire libre en la Plaza de Toros. Del 25 de julio al 13 de septiembre de 2026.</p>
         <div class="footer__socials">
           <a href="https://www.instagram.com/plazaparaisotorremolinos/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
@@ -218,12 +290,12 @@
       <div class="footer__col">
         <h4>Explora</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="programa.html">Programa</a></li>
-          <li><a href="festival.html">El Festival</a></li>
-          <li><a href="faqs.html">FAQs</a></li>
-          <li><a href="entradas.html">Comprar entradas</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html" data-track="nav-inicio">Inicio</a></li>
+          <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
+          <li><a href="festival.html" data-track="nav-festival">El Festival</a></li>
+          <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
+          <li><a href="entradas.html" data-track="cta-entradas">Comprar entradas</a></li>
+          <li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
         </ul>
       </div>
       <div class="footer__col">

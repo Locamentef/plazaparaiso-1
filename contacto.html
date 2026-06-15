@@ -3,6 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ============================================================
+     PP-TRACKING-HEAD · Analítica (pega tus IDs y descomenta)
+     1) Google Tag Manager   2) GA4 directo   3) Meta Pixel
+     Recomendado: usa SOLO GTM y carga GA4 + Meta Pixel desde él.
+     ============================================================ -->
+<!-- (1) Google Tag Manager · sustituye GTM-XXXXXXX
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+<!-- (2) Google Analytics 4 (directo) · sustituye G-XXXXXXXXXX · úsalo solo si NO cargas GA4 desde GTM
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+<!-- (3) Meta Pixel · sustituye PIXEL_ID
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','PIXEL_ID');fbq('track','PageView');</script>
+-->
 <title>Contacto · Plaza Paraíso Torremolinos | Escríbenos</title>
 <meta name="description" content="Contacta con Plaza Paraíso Torremolinos. Dudas sobre entradas, grupos, prensa o colaboraciones para el verano 2026 en la Plaza de Toros de Torremolinos. Escríbenos y te respondemos.">
 <meta name="keywords" content="contacto plaza paraiso, torremolinos, plaza de toros torremolinos, prensa festival malaga, grupos">
@@ -39,20 +54,66 @@
   ]
 }
 </script>
+<!-- PP-JSONLD: breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.plazaparaiso.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contacto",
+      "item": "https://www.plazaparaiso.com/contacto.html"
+    }
+  ]
+}
+</script>
+<!-- PP-JSONLD: recinto -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "Plaza de Toros de Torremolinos",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Bulevar de San Miguel",
+    "addressLocality": "Torremolinos",
+    "addressRegion": "Málaga",
+    "postalCode": "29620",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.621,
+    "longitude": -4.4985
+  },
+  "url": "https://www.plazaparaiso.com/festival.html"
+}
+</script>
 </head>
 <body>
+<!-- PP-TRACKING-BODY · Google Tag Manager (noscript) · sustituye GTM-XXXXXXX
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+-->
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <input type="checkbox" id="nav-switch" class="visually-hidden" aria-hidden="true">
   <div class="nav container">
-    <a class="nav__logo" href="index.html" aria-label="Plaza Paraíso — inicio"><img src="assets/img/logo-cream.png" alt="Plaza Paraíso"></a>
+    <a class="nav__logo" href="index.html" data-track="nav-inicio" aria-label="Plaza Paraíso — inicio"><img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso"></a>
     <ul class="nav__links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="programa.html">Programa</a></li>
-      <li><a href="festival.html">El Festival</a></li>
-      <li><a href="faqs.html">FAQs</a></li>
-      <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      <li><a href="index.html" data-track="nav-inicio">Inicio</a></li>
+      <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
+      <li><a href="festival.html" data-track="nav-festival">El Festival</a></li>
+      <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
+      <li><a href="contacto.html" data-track="nav-contacto" aria-current="page">Contacto</a></li>
     </ul>
     <div class="nav__right">
       <div class="nav__socials">
@@ -60,7 +121,7 @@
         <a href="https://www.facebook.com/plazaparaisotorremolinos" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="https://www.tiktok.com/@plazaparaisotorremolinos?_r=1&_t=ZN-94vLUWIwgwI" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
       </div>
-      <a class="btn btn--primary" href="entradas.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg>Entradas</a>
+      <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg>Entradas</a>
       <label class="nav__burger nav__toggle" for="nav-switch" role="button" aria-label="Abrir menú" tabindex="0">
         <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         <svg class="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
@@ -68,12 +129,12 @@
     </div>
   </div>
   <nav class="nav__mobile" aria-label="Menú móvil">
-    <a href="index.html">Inicio</a>
-    <a href="programa.html">Programa</a>
-    <a href="festival.html">El Festival</a>
-    <a href="faqs.html">FAQs</a>
-    <a href="contacto.html">Contacto</a>
-    <a class="btn btn--primary" href="entradas.html">Comprar entradas</a>
+    <a href="index.html" data-track="nav-inicio">Inicio</a>
+    <a href="programa.html" data-track="nav-programa">Programa</a>
+    <a href="festival.html" data-track="nav-festival">El Festival</a>
+    <a href="faqs.html" data-track="nav-faqs">FAQs</a>
+    <a href="contacto.html" data-track="nav-contacto">Contacto</a>
+    <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas">Comprar entradas</a>
   </nav>
 </header>
 
@@ -119,17 +180,16 @@
         <div class="ticket" style="padding:clamp(1.5rem,4vw,2.5rem);">
           <h2 class="section-title" style="font-size:var(--text-xl);margin-bottom:var(--space-2);">Escríbenos</h2>
           <p class="muted" style="font-size:var(--text-sm);margin-bottom:var(--space-5);">Los campos con <span style="color:var(--red);">*</span> son obligatorios.</p>
-          <!-- ====== ENVÍO AUTOMÁTICO CON FORMSPREE ======
+          <!-- ====== ENVÍO AUTOMÁTICO CON WEB3FORMS ======
                El correo llega solo a hola@locamente.net (el visitante NO abre su cliente de correo).
-               ▸ Pega tu ENDPOINT de formulario en action="..." más abajo.
-                 Formato: https://formspree.io/f/XXXXXXXX  (lo encuentras en Formspree →
-                 tu formulario → pestaña "Integration"). El "Project ID" y el "Deploy key"
-                 NO son el endpoint: sirven para el CLI de Formspree (forms.toml), no para un
-                 formulario HTML. Si me pasas el endpoint /f/XXXX lo dejo conectado.
+               Conectado con el Access Key público de Web3Forms. Para cambiar el correo de
+               destino, hazlo en tu panel de Web3Forms → Settings. Sin límite mensual de 50.
           -->
-          <form id="contact-form" class="form-grid form-grid--2" action="https://formspree.io/f/TU_FORM_ID" method="POST" aria-label="Formulario de contacto">
-            <input type="hidden" name="_subject" value="Nuevo contacto · Plaza Paraíso (web)">
-            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+          <form id="contact-form" class="form-grid form-grid--2" action="https://api.web3forms.com/submit" method="POST" aria-label="Formulario de contacto">
+            <input type="hidden" name="access_key" value="4a2a4f68-5cba-4f4c-9d06-e0554cc0a600">
+            <input type="hidden" name="subject" value="Nuevo contacto · Plaza Paraíso (web)">
+            <input type="hidden" name="from_name" value="Web Plaza Paraíso">
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
             <div class="field">
               <label for="nombre">Nombre <span class="req" aria-hidden="true">*</span></label>
               <input type="text" id="nombre" name="nombre" autocomplete="name" required minlength="2" placeholder="Tu nombre">
@@ -164,7 +224,7 @@
               <label for="privacidad">He leído y acepto la <a href="privacidad.html" style="color:var(--orange);text-decoration:underline;">política de privacidad</a> y el tratamiento de mis datos para responder a esta consulta. <span class="req" aria-hidden="true">*</span></label>
             </div>
             <div class="field field--full">
-              <button type="submit" class="btn btn--primary btn--lg btn--block">Enviar mensaje
+              <button type="submit" id="btn-contacto-submit" data-track="form-contacto-submit" class="btn btn--primary btn--lg btn--block">Enviar mensaje
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </button>
             </div>
@@ -184,10 +244,10 @@
         <h2>Nos vemos en la plaza</h2>
         <p>No te quedes sin tu sitio. Consigue tu entrada para las mejores noches del verano en Torremolinos.</p>
         <div class="hero__cta">
-          <a class="btn btn--primary btn--lg" href="entradas.html">Comprar entradas
+          <a class="btn btn--primary btn--lg" href="entradas.html" data-track="cta-entradas">Comprar entradas
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
-          <a class="btn btn--ghost-cream btn--lg" href="programa.html">Ver programa</a>
+          <a class="btn btn--ghost-cream btn--lg" href="programa.html" data-track="nav-programa">Ver programa</a>
         </div>
       </div>
     </div>
@@ -199,7 +259,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <img src="assets/img/logo-cream.png" alt="Plaza Paraíso">
+        <img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso">
         <p>El punto de encuentro del verano en Torremolinos. Música, teatro, gastronomía y ocio al aire libre en la Plaza de Toros. Del 25 de julio al 13 de septiembre de 2026.</p>
         <div class="footer__socials">
           <a href="https://www.instagram.com/plazaparaisotorremolinos/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
@@ -210,12 +270,12 @@
       <div class="footer__col">
         <h4>Explora</h4>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="programa.html">Programa</a></li>
-          <li><a href="festival.html">El Festival</a></li>
-          <li><a href="faqs.html">FAQs</a></li>
-          <li><a href="entradas.html">Comprar entradas</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html" data-track="nav-inicio">Inicio</a></li>
+          <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
+          <li><a href="festival.html" data-track="nav-festival">El Festival</a></li>
+          <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
+          <li><a href="entradas.html" data-track="cta-entradas">Comprar entradas</a></li>
+          <li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
         </ul>
       </div>
       <div class="footer__col">
@@ -244,7 +304,7 @@
 
 <script src="cookies.js"></script>
 <script>
-/* Envío del formulario de contacto vía Formspree (AJAX, sin recargar) */
+/* Envío del formulario de contacto vía Web3Forms (AJAX, sin recargar) */
 (function () {
   var form = document.getElementById("contact-form");
   if (!form) return;
@@ -253,15 +313,8 @@
     status.hidden = false;
     status.textContent = msg;
     status.className = "form-status " + (ok ? "is-ok" : "is-err");
-    status.scrollIntoView ? null : null;
   }
   form.addEventListener("submit", function (e) {
-    // Si aún no se ha configurado el endpoint, deja el envío normal (no rompe nada)
-    if (/TU_FORM_ID/.test(form.getAttribute("action"))) {
-      e.preventDefault();
-      show("⚠️ El formulario aún no está conectado. Configura tu endpoint de Formspree (https://formspree.io/f/XXXX) en el atributo action. Mientras tanto, escríbenos a hola@locamente.net.", false);
-      return;
-    }
     e.preventDefault();
     var btn = form.querySelector('button[type="submit"]');
     var original = btn.innerHTML;
@@ -278,7 +331,7 @@
         if (window.plpTrack) window.plpTrack("generate_lead", { form: "contacto" }, "Lead", { content_name: "Formulario de contacto" });
       } else {
         res.json().then(function (d) {
-          show((d && d.errors && d.errors[0] && d.errors[0].message) || "No se ha podido enviar. Inténtalo de nuevo o escríbenos a hola@locamente.net.", false);
+          show((d && d.message) || "No se ha podido enviar. Inténtalo de nuevo o escríbenos a hola@locamente.net.", false);
         }).catch(function () {
           show("No se ha podido enviar. Inténtalo de nuevo o escríbenos a hola@locamente.net.", false);
         });

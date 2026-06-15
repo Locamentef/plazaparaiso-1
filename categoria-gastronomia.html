@@ -3,6 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ============================================================
+     PP-TRACKING-HEAD · Analítica (pega tus IDs y descomenta)
+     1) Google Tag Manager   2) GA4 directo   3) Meta Pixel
+     Recomendado: usa SOLO GTM y carga GA4 + Meta Pixel desde él.
+     ============================================================ -->
+<!-- (1) Google Tag Manager · sustituye GTM-XXXXXXX
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+<!-- (2) Google Analytics 4 (directo) · sustituye G-XXXXXXXXXX · úsalo solo si NO cargas GA4 desde GTM
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+<!-- (3) Meta Pixel · sustituye PIXEL_ID
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','PIXEL_ID');fbq('track','PageView');</script>
+-->
 <title>Gastronomía en Plaza Paraíso Torremolinos 2026 · Programa por categoría</title>
 <meta name="description" content="Gastronomía en Plaza Paraíso Torremolinos: Una selección de propuestas para todos los gustos, desde lo informal a experiencias más especiales. Sabores, ambiente y buen rollo para compartir, descubrir y repetir.">
 <meta name="keywords" content="gastronomía torremolinos, plaza paraiso, programa, planes torremolinos, ocio malaga, verano 2026">
@@ -23,7 +38,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="styles.css">
-<!-- ANALYTICS & TRACKING — GA4 + Meta Pixel: ver snippet en el head de index.html -->
+
 <script type="application/ld+json">
 {
   "@context":"https://schema.org","@type":"CollectionPage","name":"Gastronomía — Plaza Paraíso Torremolinos",
@@ -31,20 +46,50 @@
   "isPartOf":{"@type":"Festival","name":"Plaza Paraíso Torremolinos","startDate":"2026-07-25","endDate":"2026-09-13"}
 }
 </script>
+<!-- PP-JSONLD: breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.plazaparaiso.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Programa",
+      "item": "https://www.plazaparaiso.com/programa.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Gastronomía",
+      "item": "https://www.plazaparaiso.com/categoria-gastronomia.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<!-- PP-TRACKING-BODY · Google Tag Manager (noscript) · sustituye GTM-XXXXXXX
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+-->
 <a class="skip-link" href="#main">Saltar al contenido</a>
 
 <header class="site-header">
   <input type="checkbox" id="nav-switch" class="visually-hidden" aria-hidden="true">
   <div class="nav container">
-    <a class="nav__logo" href="index.html" aria-label="Plaza Paraíso — inicio"><img src="assets/img/logo-cream.png" alt="Plaza Paraíso"></a>
+    <a class="nav__logo" href="index.html" data-track="nav-inicio" aria-label="Plaza Paraíso — inicio"><img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso"></a>
     <ul class="nav__links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="programa.html">Programa</a></li>
-      <li><a href="festival.html">El Festival</a></li>
-      <li><a href="faqs.html">FAQs</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="index.html" data-track="nav-inicio">Inicio</a></li>
+      <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
+      <li><a href="festival.html" data-track="nav-festival">El Festival</a></li>
+      <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
+      <li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
     </ul>
     <div class="nav__right">
       <div class="nav__socials">
@@ -52,7 +97,7 @@
         <a href="https://www.facebook.com/plazaparaisotorremolinos" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="https://www.tiktok.com/@plazaparaisotorremolinos?_r=1&_t=ZN-94vLUWIwgwI" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
       </div>
-      <a class="btn btn--primary" href="entradas.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg>Entradas</a>
+      <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg>Entradas</a>
       <label class="nav__burger nav__toggle" for="nav-switch" role="button" aria-label="Abrir menú" tabindex="0">
         <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         <svg class="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
@@ -60,8 +105,8 @@
     </div>
   </div>
   <nav class="nav__mobile" aria-label="Menú móvil">
-    <a href="index.html">Inicio</a><a href="programa.html">Programa</a><a href="festival.html">El Festival</a><a href="faqs.html">FAQs</a><a href="contacto.html">Contacto</a>
-    <a class="btn btn--primary" href="entradas.html">Comprar entradas</a>
+    <a href="index.html" data-track="nav-inicio">Inicio</a><a href="programa.html" data-track="nav-programa">Programa</a><a href="festival.html" data-track="nav-festival">El Festival</a><a href="faqs.html" data-track="nav-faqs">FAQs</a><a href="contacto.html" data-track="nav-contacto">Contacto</a>
+    <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas">Comprar entradas</a>
   </nav>
 </header>
 <main id="main">
@@ -78,10 +123,10 @@
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Plaza de Toros · Torremolinos</span>
         </div>
         <div class="cat-hero__cta">
-          <a class="btn btn--navy btn--lg" href="entradas.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg> Consigue tu entrada</a>
+          <a class="btn btn--navy btn--lg" href="entradas.html" data-track="cta-entradas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg> Consigue tu entrada</a>
         </div>
       </div>
-      <div class="cat-hero__poster"><img src="assets/img/gastro-poster.png" alt="Cartel de Gastronomía de Plaza Paraíso 2026."></div>
+      <div class="cat-hero__poster"><img width="4501" height="5625" decoding="async" loading="lazy" src="assets/img/gastro-poster.png" alt="Cartel de Gastronomía de Plaza Paraíso 2026."></div>
     </div>
   </section>
 
@@ -91,9 +136,9 @@
     <div class="container">
       <div class="section-head"><span class="eyebrow">El cartel de Gastronomía</span><h2 class="section-title" id="evts-title">El evento</h2></div>
       <div class="events-grid">
-        <a class="event-card" href="evento-little-italy.html" aria-label="Little Italy — 27–28 Ago">
+        <a class="event-card" href="evento-little-italy.html" data-track="evento-little-italy" aria-label="Little Italy — 27–28 Ago">
           <span class="tag tag--gastro event-card__tag">Gastronomía</span>
-          <div class="event-card__media"><img src="assets/img/littleitaly.jpg" alt="Little Italy en Plaza Paraíso."></div>
+          <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/littleitaly.jpg" alt="Little Italy en Plaza Paraíso."></div>
           <div class="wave" aria-hidden="true"></div>
           <div class="event-card__label"><div class="event-card__kicker">Italia Gastrofest</div><div class="event-card__name">Little Italy</div><div class="event-card__date">27–28 Ago</div></div>
         </a>
@@ -105,23 +150,23 @@
     <div class="container">
       <div class="section-head section-head--center"><span class="eyebrow">Explora más</span><h2 class="section-title" id="otros-title">Otros mundos</h2></div>
       <div class="worlds">
-        <a class="world world--musica" href="categoria-musica.html"><span class="world__index" aria-hidden="true">01</span><span class="world__word">Música</span><span class="world__sub">Conciertos en directo</span></a>
-        <a class="world world--teatro" href="categoria-teatro.html"><span class="world__index" aria-hidden="true">02</span><span class="world__word">Teatro</span><span class="world__sub">Comedia y show</span></a>
-        <a class="world world--ocio" href="categoria-ocio.html"><span class="world__index" aria-hidden="true">04</span><span class="world__word">Ocio</span><span class="world__sub">Fiesta y planes</span></a>
+        <a class="world world--musica" href="categoria-musica.html" data-track="cat-musica"><span class="world__index" aria-hidden="true">01</span><span class="world__word">Música</span><span class="world__sub">Conciertos en directo</span></a>
+        <a class="world world--teatro" href="categoria-teatro.html" data-track="cat-teatro"><span class="world__index" aria-hidden="true">02</span><span class="world__word">Teatro</span><span class="world__sub">Comedia y show</span></a>
+        <a class="world world--ocio" href="categoria-ocio.html" data-track="cat-ocio"><span class="world__index" aria-hidden="true">04</span><span class="world__word">Ocio</span><span class="world__sub">Fiesta y planes</span></a>
       </div>
     </div>
   </section>
 
   <div class="wave" aria-hidden="true"></div>
   <section class="cta-photo" aria-labelledby="cta-title">
-    <div class="cta-photo__bg" aria-hidden="true"><img src="assets/img/littleitaly.jpg" alt=""></div>
+    <div class="cta-photo__bg" aria-hidden="true"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/littleitaly.jpg" alt=""></div>
     <div class="cta-photo__inner">
       <span class="eyebrow eyebrow--cream">Plaza de Toros · Torremolinos</span>
       <h2 id="cta-title">No te lo<br>pierdas</h2>
       <p>Asegura tu sitio para las mejores noches del verano. Compra anticipada recomendada.</p>
       <div class="cta-photo__cta">
-        <a class="btn btn--primary btn--lg" href="entradas.html">Comprar entradas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-        <a class="btn btn--ghost-cream btn--lg" href="programa.html">Ver todo el programa</a>
+        <a class="btn btn--primary btn--lg" href="entradas.html" data-track="cta-entradas">Comprar entradas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a class="btn btn--ghost-cream btn--lg" href="programa.html" data-track="nav-programa">Ver todo el programa</a>
       </div>
     </div>
   </section>
@@ -133,7 +178,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <img src="assets/img/logo-cream.png" alt="Plaza Paraíso">
+        <img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso">
         <p>El punto de encuentro del verano en Torremolinos. Música, teatro, gastronomía y ocio al aire libre en la Plaza de Toros. Del 25 de julio al 13 de septiembre de 2026.</p>
         <div class="footer__socials">
           <a href="https://www.instagram.com/plazaparaisotorremolinos/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
@@ -142,7 +187,7 @@
         </div>
       </div>
       <div class="footer__col"><h4>Explora</h4><ul>
-        <li><a href="index.html">Inicio</a></li><li><a href="programa.html">Programa</a></li><li><a href="festival.html">El Festival</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="entradas.html">Comprar entradas</a></li><li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-track="nav-inicio">Inicio</a></li><li><a href="programa.html" data-track="nav-programa">Programa</a></li><li><a href="festival.html" data-track="nav-festival">El Festival</a></li><li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li><li><a href="entradas.html" data-track="cta-entradas">Comprar entradas</a></li><li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
       </ul></div>
       <div class="footer__col"><h4>Legal</h4><ul>
         <li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="privacidad.html">Política de privacidad</a></li><li><a href="cookies.html">Política de cookies</a></li><li><a href="#" data-cookie-settings>Preferencias de cookies</a></li>
