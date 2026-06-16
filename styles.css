@@ -568,10 +568,14 @@ button { font-family: inherit; }
   padding: var(--space-4) var(--space-5);
   border-bottom: 1px solid var(--line);
   border-left: 6px solid var(--cat, var(--navy));
-  transition: background var(--dur);
+  transition: background var(--dur), transform var(--dur);
+  text-decoration: none;
+  color: inherit;
 }
 .cal-row:last-child { border-bottom: 0; }
 .cal-row:hover { background: var(--cream-50); }
+a.cal-row:hover .cal-row__event { text-decoration: underline; text-underline-offset: 3px; }
+a.cal-row:focus-visible { outline: 2px solid var(--navy); outline-offset: -2px; }
 .cal-row--musica { --cat: var(--cat-musica); }
 .cal-row--teatro { --cat: var(--cat-teatro); }
 .cal-row--gastro { --cat: var(--cat-gastro); }
@@ -769,7 +773,8 @@ button { font-family: inherit; }
 @media (min-width: 900px) { .split { grid-template-columns: 1fr 1fr; } .split--reverse > :first-child { order: 2; } }
 .media-frame { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
 .media-frame img { width: 100%; height: 100%; object-fit: cover; }
-.poster-frame { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 6px solid #fff; }
+.poster-frame { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); border: 6px solid #fff; aspect-ratio: 4 / 5; display: block; }
+.poster-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .cta-banner {
   position: relative;
@@ -850,7 +855,7 @@ button { font-family: inherit; }
 .hero-cine__bg::after {
   content: ""; position: absolute; inset: 0;
   background:
-    linear-gradient(to bottom, rgba(17,22,44,.55) 0%, rgba(17,22,44,.10) 28%, rgba(17,22,44,.20) 55%, rgba(17,22,44,.92) 100%);
+    linear-gradient(to bottom, rgba(17,22,44,.62) 0%, rgba(17,22,44,.32) 30%, rgba(17,22,44,.40) 58%, rgba(17,22,44,.93) 100%);
 }
 .hero-cine__inner {
   position: relative; z-index: 2;
@@ -1095,26 +1100,26 @@ body.has-buybar { padding-bottom: 86px; }
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
   background: rgba(17,22,44,.98); backdrop-filter: saturate(140%) blur(8px);
   border-top: 1px solid rgba(247,234,213,.12);
-  padding: 10px var(--gutter); padding-bottom: max(10px, env(safe-area-inset-bottom));
+  padding: 7px var(--gutter); padding-bottom: max(7px, env(safe-area-inset-bottom));
   display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
 }
 .buybar__price { color: var(--cream); line-height: 1.05; }
-.buybar__price b { display: block; font-size: var(--text-lg); font-weight: var(--fw-black); }
-.buybar__price small { font-size: var(--text-xs); color: rgba(247,234,213,.6); text-transform: uppercase; letter-spacing: .06em; }
-.buybar .btn { flex: 0 0 auto; }
+.buybar__price b { display: block; font-size: var(--text-md); font-weight: var(--fw-black); }
+.buybar__price small { font-size: 11px; color: rgba(247,234,213,.6); text-transform: uppercase; letter-spacing: .06em; }
+.buybar .btn { flex: 0 0 auto; padding: 11px 22px; font-size: var(--text-sm); }
 @media (min-width: 760px) {
   .buybar {
     left: 0; right: 0; margin-inline: auto;
     bottom: var(--space-4);
     width: fit-content; max-width: calc(100% - 2 * var(--gutter));
     justify-content: center; gap: var(--space-6);
-    padding: 10px 14px 10px var(--space-5);
+    padding: 7px 10px 7px var(--space-4);
     border: 1px solid rgba(247,234,213,.14);
     border-radius: var(--radius-pill);
     box-shadow: var(--shadow-lg);
   }
   .buybar__price { display: flex; align-items: baseline; gap: 10px; flex: 0 0 auto; white-space: nowrap; }
-  .buybar__price b { display: inline; font-size: var(--text-lg); white-space: nowrap; }
+  .buybar__price b { display: inline; font-size: var(--text-md); white-space: nowrap; }
 }
 
 /* ---- INTRO / QUÉ VAS A VIVIR ---- */

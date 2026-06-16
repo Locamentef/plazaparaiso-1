@@ -116,12 +116,12 @@
   <input type="checkbox" id="nav-switch" class="visually-hidden" aria-hidden="true">
   <div class="nav container">
     <a class="nav__logo" href="index.html" data-track="nav-inicio" aria-label="Plaza Paraíso — inicio">
-      <img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso">
+      <img width="1170" height="350" decoding="async" loading="lazy" src="assets/img/logo-verano.png" alt="Plaza Paraíso">
     </a>
     <ul class="nav__links">
       <li><a href="index.html" data-track="nav-inicio" aria-current="page">Inicio</a></li>
       <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
-      <li><a href="festival.html" data-track="nav-festival">El Festival</a></li>
+      <li><a href="festival.html" data-track="nav-festival">Festival</a></li>
       <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
       <li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
     </ul>
@@ -144,7 +144,7 @@
   <nav class="nav__mobile" aria-label="Menú móvil">
     <a href="index.html" data-track="nav-inicio">Inicio</a>
     <a href="programa.html" data-track="nav-programa">Programa</a>
-    <a href="festival.html" data-track="nav-festival">El Festival</a>
+    <a href="festival.html" data-track="nav-festival">Festival</a>
     <a href="faqs.html" data-track="nav-faqs">FAQs</a>
     <a href="contacto.html" data-track="nav-contacto">Contacto</a>
     <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas">Comprar entradas</a>
@@ -188,52 +188,87 @@
     </div>
   </div>
 
+  <!-- ====== REEL DE VÍDEO (formato vertical 9:16) ======
+       Reproductor sin salir de la web (solo CSS): al hacer clic en la miniatura
+       se carga el Short de YouTube con autoplay. Para cambiar el vídeo, edita el
+       ID en el src del <iframe> (ahora: HpmsuDVCkMw). Para cambiar la portada,
+       edita el src de la imagen dentro de .reels__cover.
+  -->
+  <section class="section section--cream" aria-labelledby="reels-title">
+    <div class="container">
+      <div class="reels">
+        <div class="reels__copy">
+          <span class="eyebrow">El paraíso en vídeo</span>
+          <h2 class="section-title" id="reels-title">Vívelo<br>antes de venir</h2>
+          <p>Este verano 2026, la histórica Plaza de Toros de Torremolinos se convierte en el gran punto de encuentro de la cultura. Durante más de 50 días, su ruedo se llena de conciertos, teatro, gastronomía y ocio en un entorno único al aire libre, a un paso de la playa.</p>
+          <p>Plaza Paraíso nace para locales de Torremolinos y Málaga, y para quienes pasan el verano en la Costa del Sol buscando planes diferentes. Una cita abierta, cercana y veraniega para vivir las mejores tardes del verano.</p>
+          <div class="cta-photo__cta" style="margin-top:var(--space-6);">
+            <a class="btn btn--primary btn--lg" href="entradas.html" data-track="cta-entradas">Consigue tu entrada
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="reels__phone">
+          <input type="checkbox" id="reels-play" class="reels__toggle" aria-hidden="true">
+          <label class="reels__cover" for="reels-play">
+            <img width="746" height="1348" decoding="async" loading="lazy" src="assets/img/reels-malaga.png" alt="Avance en vídeo: Málaga, Plaza Paraíso Torremolinos.">
+            <span class="reels__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="reels__tag">Ver vídeo</span>
+          </label>
+          <div class="reels__embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/HpmsuDVCkMw?autoplay=1&rel=0&playsinline=1&modestbranding=1" title="Plaza Paraíso · Málaga" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- EL CARTEL — visual programme grid -->
-  <section class="section section--cream" aria-labelledby="cartel-title">
+  <section class="section section--cream-50" aria-labelledby="cartel-title">
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">El cartel 2026</span>
         <h2 class="section-title" id="cartel-title">El programa</h2>
       </div>
       <div class="events-grid events-grid--four">
-        <a class="event-card" href="evento-bresh.html" data-track="evento-bresh" aria-label="Bresh — Sábado 12 de septiembre">
+        <a class="event-card" href="bresh.html" data-track="evento-bresh" aria-label="Bresh — Sábado 12 de septiembre">
           <span class="tag tag--musica event-card__tag">OCIO</span>
           <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/bresh.jpg" alt="Bresh en directo con escenario rosa neón."></div>
           <div class="wave" aria-hidden="true"></div>
           <div class="event-card__label"><div class="event-card__kicker">La fiesta más linda</div><div class="event-card__name">Bresh</div><div class="event-card__date">Sáb 12 Sep</div></div>
         </a>
-        <a class="event-card" href="evento-laura.html" data-track="evento-laura" aria-label="Laura Gallego — Viernes 7 de agosto">
+        <a class="event-card" href="lauragallego.html" data-track="evento-laura" aria-label="Laura Gallego — Viernes 7 de agosto">
           <span class="tag tag--musica event-card__tag">Música</span>
           <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/laura.jpg" alt="Laura Gallego cantando en directo."></div>
           <div class="wave" aria-hidden="true"></div>
           <div class="event-card__label"><div class="event-card__kicker">Concierto</div><div class="event-card__name">Laura Gallego</div><div class="event-card__date">Vie 7 Ago</div></div>
         </a>
-        <a class="event-card" href="evento-loco-bongo.html" data-track="evento-loco-bongo" aria-label="Loco Bongo — Todos los sábados">
+        <a class="event-card" href="locobongo.html" data-track="evento-loco-bongo" aria-label="Loco Bongo — Todos los sábados">
           <span class="tag tag--ocio event-card__tag">Ocio</span>
           <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/locobongo.jpg" alt="Fiesta Loco Bongo con ambiente de verano."></div>
           <div class="wave" aria-hidden="true"></div>
           <div class="event-card__label"><div class="event-card__kicker">Y especiales</div><div class="event-card__name">Loco Bongo</div><div class="event-card__date">SÁBADOS Y MÁS</div></div>
         </a>
-        <a class="event-card" href="evento-las-pilardos.html" data-track="evento-las-pilardos" aria-label="Las Pilardos — Viernes 21 de agosto">
+        <a class="event-card" href="laspilardos.html" data-track="evento-las-pilardos" aria-label="Las Pilardos — Viernes 21 de agosto">
           <span class="tag tag--teatro event-card__tag">Teatro</span>
           <div class="event-card__media"><img width="1600" height="2000" decoding="async" loading="lazy" src="assets/opt/pilardos.jpg" alt="Las Pilardos en Operación Marbella."></div>
           <div class="wave" aria-hidden="true"></div>
           <div class="event-card__label"><div class="event-card__kicker">Operación Marbella</div><div class="event-card__name">Las Pilardos</div><div class="event-card__date">Vie 21 Ago</div></div>
         </a>
-        <a class="event-card" href="evento-furor.html" data-track="evento-furor" aria-label="Furor The Show — Domingos de agosto">
+        <a class="event-card" href="furor.html" data-track="evento-furor" aria-label="Furor The Show — Domingos de agosto">
           <span class="tag tag--ocio event-card__tag">Ocio</span>
           <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/furor.jpg" alt="Furor The Show en directo."></div>
           <div class="wave" aria-hidden="true"></div>
           <div class="event-card__label"><div class="event-card__kicker">con Alonso Caparrós</div><div class="event-card__name">Furor The Show</div><div class="event-card__date">Domingos Ago</div></div>
         </a>
-        <a class="event-card" href="evento-sigue-la-luz.html" data-track="evento-sigue-la-luz" aria-label="Sigue la Luz — Jueves 13 de agosto">
+        <a class="event-card" href="siguelaluz.html" data-track="evento-sigue-la-luz" aria-label="Sigue la Luz — Jueves 13 de agosto">
           <span class="tag tag--teatro event-card__tag">Teatro</span>
           <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/sigue.jpg" alt="Espectáculo Sigue la Luz en el escenario."></div>
           <div class="wave" aria-hidden="true"></div>
           <div class="event-card__label"><div class="event-card__kicker">XENON SPAIN 
 Y PACA LA PIRAÑA</div><div class="event-card__name">Sigue la Luz</div><div class="event-card__date">Jue 13 Ago</div></div>
         </a>
-        <a class="event-card" href="evento-little-italy.html" data-track="evento-little-italy" aria-label="Little Italy Gastrofest — 27 y 28 de agosto">
+        <a class="event-card" href="littleitaly.html" data-track="evento-little-italy" aria-label="Little Italy Gastrofest — 27 y 28 de agosto">
           <span class="tag tag--gastro event-card__tag">Gastronomía</span>
           <div class="event-card__media"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/littleitaly.jpg" alt="Little Italy Gastrofest, festival de comida italiana."></div>
           <div class="wave" aria-hidden="true"></div>
@@ -250,7 +285,7 @@ Y PACA LA PIRAÑA</div><div class="event-card__name">Sigue la Luz</div><div clas
   </section>
 
   <!-- CUATRO MUNDOS color tiles -->
-  <section class="section section--cream-50 section--tight" aria-labelledby="worlds-title">
+  <section class="section section--cream section--tight" aria-labelledby="worlds-title">
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">Cuatro mundos, un verano</span>
@@ -272,7 +307,7 @@ Y PACA LA PIRAÑA</div><div class="event-card__name">Sigue la Luz</div><div clas
     <div class="cta-photo__inner">
       <span class="eyebrow eyebrow--cream">Plaza de Toros · Torremolinos</span>
       <h2 id="cta-title">Nos vemos<br>en la plaza</h2>
-      <p>Las mejores noches del verano se viven aquí. 
+      <p>Las mejores tardes del verano se viven aquí. 
 ¡Asegura tu sitio y hazte ya con tentrada!</p>
       <div class="cta-photo__cta">
         <a class="btn btn--primary btn--lg" href="entradas.html" data-track="cta-entradas">Comprar entradas
@@ -283,40 +318,6 @@ Y PACA LA PIRAÑA</div><div class="event-card__name">Sigue la Luz</div><div clas
     </div>
   </section>
   <div class="wave wave--flip" aria-hidden="true"></div>
-
-  <!-- ====== REEL DE VÍDEO (formato vertical 9:16) ======
-       Reproductor sin salir de la web (solo CSS): al hacer clic en la miniatura
-       se carga el Short de YouTube con autoplay. Para cambiar el vídeo, edita el
-       ID en el src del <iframe> (ahora: HpmsuDVCkMw). Para cambiar la portada,
-       edita el src de la imagen dentro de .reels__cover.
-  -->
-  <section class="section section--cream" aria-labelledby="reels-title">
-    <div class="container">
-      <div class="reels">
-        <div class="reels__copy">
-          <span class="eyebrow">El paraíso en vídeo</span>
-          <h2 class="section-title" id="reels-title">Vívelo<br>antes de venir</h2>
-          <p>Un vistazo a lo que te espera este verano en la Plaza de Toros de Torremolinos. Dale al play.</p>
-          <div class="cta-photo__cta" style="margin-top:var(--space-6);">
-            <a class="btn btn--primary btn--lg" href="entradas.html" data-track="cta-entradas">Consigue tu entrada
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="reels__phone">
-          <input type="checkbox" id="reels-play" class="reels__toggle" aria-hidden="true">
-          <label class="reels__cover" for="reels-play">
-            <img width="746" height="1348" decoding="async" loading="lazy" src="assets/img/reels-malaga.png" alt="Avance en vídeo: Málaga, Plaza Paraíso Torremolinos.">
-            <span class="reels__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-            <span class="reels__tag">Ver vídeo</span>
-          </label>
-          <div class="reels__embed">
-            <iframe src="https://www.youtube-nocookie.com/embed/HpmsuDVCkMw?autoplay=1&rel=0&playsinline=1&modestbranding=1" title="Plaza Paraíso · Málaga" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- NEWSLETTER (slim) -->
   <section class="section newsletter" aria-labelledby="news-form-title">
@@ -344,7 +345,7 @@ Y PACA LA PIRAÑA</div><div class="event-card__name">Sigue la Luz</div><div clas
       <div class="partners-band">
         <div class="partners-group">
           <h4>Organiza</h4>
-          <div class="partners-logos"><span class="partner-name" style="display:inline-flex;align-items:center;gap:.3em;"><img src="assets/opt/locamente-logo.png" width="640" height="640" decoding="async" alt="Locamente" style="height:80px;width:auto;"> · 10 años</span></div>
+          <div class="partners-logos"><img src="assets/img/locamente-10.png" width="834" height="767" decoding="async" alt="Locamente · 10 años" style="height:120px;width:auto;"></div>
         </div>
         <div class="partners-group">
           <h4>Con la colaboración de</h4>
@@ -360,7 +361,7 @@ Y PACA LA PIRAÑA</div><div class="event-card__name">Sigue la Luz</div><div clas
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <img width="1980" height="1080" decoding="async" loading="lazy" src="assets/img/logo-cream.png" alt="Plaza Paraíso">
+        <img width="1170" height="350" decoding="async" loading="lazy" src="assets/img/logo-verano.png" alt="Plaza Paraíso">
         <p>El punto de encuentro del verano en Torremolinos. Música, teatro, gastronomía y ocio al aire libre en la Plaza de Toros. Del 25 de julio al 13 de septiembre de 2026.</p>
         <div class="footer__socials">
           <a href="https://www.instagram.com/plazaparaisotorremolinos/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
@@ -373,7 +374,7 @@ Y PACA LA PIRAÑA</div><div class="event-card__name">Sigue la Luz</div><div clas
         <ul>
           <li><a href="index.html" data-track="nav-inicio">Inicio</a></li>
           <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
-          <li><a href="festival.html" data-track="nav-festival">El Festival</a></li>
+          <li><a href="festival.html" data-track="nav-festival">Festival</a></li>
           <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
           <li><a href="entradas.html" data-track="cta-entradas">Comprar entradas</a></li>
           <li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
