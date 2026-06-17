@@ -1,10 +1,8 @@
 User-agent: *
 Allow: /
 
-# No indexar la copia offline ni recursos internos
-Disallow: /Plaza Paraiso - Home (offline).html
-Disallow: /_ds/
-Disallow: /screenshots/
+# Páginas legales no indexables se controlan por meta robots
 Disallow: /uploads/
+Disallow: /_ds/
 
 Sitemap: https://www.plazaparaiso.com/sitemap.xml
