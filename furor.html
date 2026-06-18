@@ -141,7 +141,7 @@
     <ul class="nav__links">
       <li><a href="index.html" data-track="nav-inicio">Inicio</a></li>
       <li><a href="programa.html" data-track="nav-programa">Programa</a></li>
-      <li><a href="festival.html" data-track="nav-festival">FESTIVAL</a></li>
+      <li><a href="festival.html" data-track="nav-festival">FESTIVAL</a></li><li><a href="blog.html" data-track="nav-blog">Blog</a></li>
       <li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li>
       <li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
     </ul>
@@ -159,7 +159,7 @@
     </div>
   </div>
   <nav class="nav__mobile" aria-label="Menú móvil">
-    <a href="index.html" data-track="nav-inicio">Inicio</a><a href="programa.html" data-track="nav-programa">Programa</a><a href="festival.html" data-track="nav-festival">Festival</a><a href="faqs.html" data-track="nav-faqs">FAQs</a><a href="contacto.html" data-track="nav-contacto">Contacto</a>
+    <a href="index.html" data-track="nav-inicio">Inicio</a><a href="programa.html" data-track="nav-programa">Programa</a><a href="festival.html" data-track="nav-festival">Festival</a><a href="blog.html" data-track="nav-blog">Blog</a><a href="faqs.html" data-track="nav-faqs">FAQs</a><a href="contacto.html" data-track="nav-contacto">Contacto</a>
     <a class="btn btn--primary" href="entradas.html" data-track="cta-entradas">Comprar entradas</a>
   </nav>
 </header>
@@ -167,10 +167,8 @@
 
   <section class="ev-hero" aria-labelledby="ev-title">
     <div class="ev-hero__bg" aria-hidden="true">
-      <video class="ev-hero__video" autoplay muted loop playsinline preload="auto" poster="assets/opt/furor-hero2.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 55%;">
-        <source src="uploads/videoplayback.mp4" type="video/mp4">
-        <picture><source type="image/webp" srcset="assets/opt/furor-hero2.webp"><img width="1800" height="1200" decoding="async" src="assets/opt/furor-hero2.jpg" alt="" style="object-position: center 92%;"></picture>
-      </video>
+      <img class="ev-hero__poster" src="assets/opt/furor-hero2.jpg" alt="" style="object-position:center 55%;">
+      <div class="ev-hero__ytwrap"><div id="furor-hero-yt"></div></div>
     </div>
     <div class="ev-hero__inner">
       <span class="ev-hero__cat">Ocio</span>
@@ -422,7 +420,7 @@
   <section class="section section--cream" aria-labelledby="buy-title">
     <div class="container">
       <h2 class="visually-hidden" id="buy-title">Entradas</h2>
-      <div class="ev-buy"><div class="ev-buy__price">Desde 15,00 € <small>+ tasas</small></div><p>Ofertas 4x3, mesas VIP y entradas individuales disponibles</p><a class="btn btn--primary btn--lg" href="https://plazaparaiso.com/furor/" data-track="compra-entrada" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg> Comprar entrada</a></div>
+      <div class="ev-buy"><div class="ev-buy__price">Desde 15,00 € <small>+ tasas</small></div><p>Ofertas 4x3, mesas VIP y entradas individuales disponibles</p><a class="btn btn--primary btn--lg" href="#fechas-title" data-track="compra-entrada"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg> Comprar entrada</a></div>
     </div>
   </section>
 
@@ -440,7 +438,7 @@
         </a>
         <a class="ev-mini" href="locobongo.html" data-track="evento-loco-bongo" aria-label="Loco Bongo — Sábados">
           <picture><source type="image/webp" srcset="assets/opt/locobongo.webp"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/locobongo.jpg" alt=""></picture>
-          <div class="ev-mini__body"><div class="ev-mini__name">Loco Bongo</div><div class="ev-mini__date">Sábados</div></div>
+          <div class="ev-mini__body"><div class="ev-mini__name">Loco Bongo</div><div class="ev-mini__date">Sábados y más</div></div>
         </a>
         <a class="ev-mini" href="laspilardos.html" data-track="evento-las-pilardos" aria-label="Las Pilardos — Vie 21 Ago">
           <picture><source type="image/webp" srcset="assets/opt/pilardos.webp"><img width="1600" height="2000" decoding="async" loading="lazy" src="assets/opt/pilardos.jpg" alt=""></picture>
@@ -507,7 +505,7 @@
         </div>
       </div>
       <div class="footer__col"><h4>Explora</h4><ul>
-        <li><a href="index.html" data-track="nav-inicio">Inicio</a></li><li><a href="programa.html" data-track="nav-programa">Programa</a></li><li><a href="festival.html" data-track="nav-festival">Festival</a></li><li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li><li><a href="entradas.html" data-track="cta-entradas">Comprar entradas</a></li><li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
+        <li><a href="index.html" data-track="nav-inicio">Inicio</a></li><li><a href="programa.html" data-track="nav-programa">Programa</a></li><li><a href="festival.html" data-track="nav-festival">Festival</a></li><li><a href="blog.html" data-track="nav-blog">Blog</a></li><li><a href="faqs.html" data-track="nav-faqs">FAQs</a></li><li><a href="entradas.html" data-track="cta-entradas">Comprar entradas</a></li><li><a href="contacto.html" data-track="nav-contacto">Contacto</a></li>
       </ul></div>
       <div class="footer__col"><h4>Legal</h4><ul>
         <li><a href="aviso-legal.html">Aviso legal</a></li><li><a href="privacidad.html">Política de privacidad</a></li><li><a href="cookies.html">Política de cookies</a></li><li><a href="#" data-cookie-settings>Preferencias de cookies</a></li>
@@ -582,6 +580,38 @@
       facade.replaceWith(frame);
     });
   });
+})();
+</script>
+<script>
+/* ====== VÍDEO DE FONDO DEL HERO (YouTube IFrame API) ======
+   Reproduce el vídeo silenciado, en bucle y sin controles, recortado a pantalla
+   completa. Usamos la API para forzar el autoplay en silencio de forma fiable.
+   Para cambiarlo: edita videoId y playlist (mismo ID). */
+(function () {
+  function initFurorHeroBg() {
+    new YT.Player('furor-hero-yt', {
+      videoId: 'hZ2dk8QmTng',
+      playerVars: {
+        autoplay: 1, mute: 1, controls: 0, loop: 1, playlist: 'hZ2dk8QmTng',
+        playsinline: 1, modestbranding: 1, rel: 0, disablekb: 1, fs: 0,
+        iv_load_policy: 3, cc_load_policy: 0
+      },
+      events: {
+        onReady: function (e) { e.target.mute(); e.target.playVideo(); },
+        onStateChange: function (e) {
+          if (e.data === YT.PlayerState.ENDED) e.target.playVideo();
+        }
+      }
+    });
+  }
+  if (window.YT && window.YT.Player) {
+    initFurorHeroBg();
+  } else {
+    window.onYouTubeIframeAPIReady = initFurorHeroBg;
+    var s = document.createElement('script');
+    s.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(s);
+  }
 })();
 </script>
 <script src="gallery.js"></script>
