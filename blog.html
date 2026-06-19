@@ -135,6 +135,28 @@
       "author": { "@type": "Organization", "name": "Plaza Paraíso · Locamente" },
       "url": "https://www.plazaparaiso.com/blog/curiosidades-plaza-de-toros-torremolinos",
       "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.plazaparaiso.com/blog/curiosidades-plaza-de-toros-torremolinos" }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Cómo pasar un día perfecto en Torremolinos: guía hora por hora",
+      "description": "Guía hora por hora para exprimir un día completo en Torremolinos: playa del Bajondillo, espetos en La Carihuela, beach clubs en Los Álamos, tardeo en La Nogalera y Plaza Paraíso en la Plaza de Toros.",
+      "image": "https://www.plazaparaiso.com/uploads/centro-de-torremolinos-2.png",
+      "datePublished": "2026-06-18",
+      "dateModified": "2026-06-18",
+      "author": { "@type": "Organization", "name": "Plaza Paraíso · Locamente" },
+      "url": "https://www.plazaparaiso.com/blog/dia-perfecto-torremolinos",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.plazaparaiso.com/blog/dia-perfecto-torremolinos" }
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Dónde salir de fiesta en Torremolinos: la guía 2026",
+      "description": "Las mejores zonas para salir de fiesta en Torremolinos en 2026: paseo marítimo, La Nogalera, Pueblo Blanco y la Plaza de Toros, sede de Plaza Paraíso.",
+      "image": "https://www.plazaparaiso.com/uploads/Locobongo-154.jpg",
+      "datePublished": "2026-06-19",
+      "dateModified": "2026-06-19",
+      "author": { "@type": "Organization", "name": "Plaza Paraíso · Locamente" },
+      "url": "https://www.plazaparaiso.com/blog/donde-salir-de-fiesta-torremolinos",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.plazaparaiso.com/blog/donde-salir-de-fiesta-torremolinos" }
     }
   ]
 }
@@ -157,18 +179,19 @@
   @media (min-width: 1040px) { .blog-list { grid-template-columns: repeat(3, 1fr); } }
   /* La publicación destacada ocupa todo el ancho */
   .blog-card--feature { grid-column: 1 / -1; }
-  @media (min-width: 720px) { .blog-card--feature { display: grid; grid-template-columns: 1.1fr 1fr; } }
+  @media (min-width: 720px) { .blog-card--feature { display: grid; grid-template-columns: 1.15fr 1fr; align-items: stretch; } }
   .blog-card { display: flex; flex-direction: column; background: var(--surface); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); text-decoration: none; color: inherit; transition: transform var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out); }
   .blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .blog-card__media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: var(--cream-50); }
-  .blog-card--feature .blog-card__media { aspect-ratio: auto; min-height: 240px; }
+  .blog-card--feature .blog-card__media { aspect-ratio: auto; min-height: 200px; }
+  @media (min-width: 720px) { .blog-card--feature .blog-card__media { min-height: 0; height: 300px; } .blog-card--feature .blog-card__body { justify-content: center; } }
   .blog-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--dur) var(--ease-out); }
   .blog-card:hover .blog-card__media img { transform: scale(1.04); }
   .blog-card__tag { position: absolute; top: 14px; left: 14px; background: var(--orange); color: #fff; font-size: var(--text-xs); font-weight: var(--fw-extra); text-transform: uppercase; letter-spacing: .1em; padding: 6px 12px; border-radius: var(--radius-pill); }
   .blog-card__body { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-5); flex: 1; }
   .blog-card__meta { font-size: var(--text-xs); font-weight: var(--fw-bold); text-transform: uppercase; letter-spacing: .08em; color: var(--navy-500); }
   .blog-card__title { font-size: var(--text-lg); font-weight: var(--fw-black); color: var(--navy); line-height: 1.12; }
-  .blog-card--feature .blog-card__title { font-size: var(--text-2xl); }
+  .blog-card--feature .blog-card__title { font-size: var(--text-xl); }
   .blog-card__excerpt { font-size: var(--text-sm); color: var(--ink-soft); line-height: 1.6; }
   .blog-card__more { margin-top: auto; padding-top: var(--space-3); font-weight: var(--fw-extra); text-transform: uppercase; letter-spacing: .06em; font-size: var(--text-sm); color: var(--orange); display: inline-flex; align-items: center; gap: .4em; }
   .blog-card__more svg { width: 18px; height: 18px; }
@@ -226,7 +249,7 @@
   <section class="pagehero palm-bg">
     <div class="container">
       <span class="eyebrow">El blog del verano</span>
-      <h1>Blog</h1>
+      <h1>Blog de planes en Torremolinos y Málaga</h1>
       <p class="lead">Ideas, guías y novedades sobre los mejores planes de verano en Torremolinos y Málaga. Todo lo que pasa en la Plaza de Toros, contado desde dentro.</p>
     </div>
   </section>
@@ -236,7 +259,7 @@
       <h2 class="visually-hidden" id="posts-title">Últimas publicaciones</h2>
       <div class="blog-list">
 
-        <a class="blog-card blog-card--feature" href="blog-planes-verano-torremolinos.html" data-track="post-planes-verano">
+        <a class="blog-card blog-card--feature" href="blog/planes-verano-torremolinos/index.html" data-track="post-planes-verano">
           <div class="blog-card__media">
             <span class="blog-card__tag">Destacado</span>
             <picture><source type="image/webp" srcset="assets/img/lineup-poster.webp"><img width="4500" height="5626" decoding="async" src="assets/img/lineup-poster.png" alt="Cartel del line-up de Plaza Paraíso 2026 en la Plaza de Toros de Torremolinos"></picture>
@@ -249,7 +272,20 @@
           </div>
         </a>
 
-        <a class="blog-card" href="blog-laura-gallego-torremolinos.html" data-track="post-laura-gallego">
+        <a class="blog-card" href="blog/donde-salir-de-fiesta-torremolinos/index.html" data-track="post-fiesta-torremolinos">
+          <div class="blog-card__media">
+            <span class="blog-card__tag">Ocio</span>
+            <picture><img width="3000" height="2000" loading="lazy" decoding="async" src="uploads/Locobongo-154.jpg" alt="Público con los brazos en alto en una fiesta al aire libre en la Plaza de Toros de Torremolinos"></picture>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">19 jun 2026 · 7 min · Ocio</span>
+            <span class="blog-card__title">Dónde salir de fiesta en Torremolinos: la guía 2026</span>
+            <span class="blog-card__excerpt">Paseo marítimo, La Nogalera, Pueblo Blanco y la Plaza de Toros: las cuatro zonas para salir de fiesta en Torremolinos, con horarios, ambiente y la novedad de Plaza Paraíso.</span>
+            <span class="blog-card__more">Leer el artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a class="blog-card" href="blog/laura-gallego-torremolinos/index.html" data-track="post-laura-gallego">
           <div class="blog-card__media">
             <span class="blog-card__tag">Música</span>
             <picture><source type="image/webp" srcset="assets/img/laura-hero.webp"><img width="1080" height="1350" loading="lazy" decoding="async" src="assets/img/laura-hero.jpg" alt="Laura Gallego en concierto presentando La Última Folclórica en Torremolinos"></picture>
@@ -262,7 +298,7 @@
           </div>
         </a>
 
-        <a class="blog-card" href="blog-actividades-grupos-malaga.html" data-track="post-grupos-malaga">
+        <a class="blog-card" href="blog/actividades-grupos-malaga/index.html" data-track="post-grupos-malaga">
           <div class="blog-card__media">
             <span class="blog-card__tag">Grupos</span>
             <picture><source type="image/webp" srcset="assets/img/locobongo-hero-opt.webp"><img width="1600" height="900" loading="lazy" decoding="async" src="assets/img/locobongo-hero-opt.jpg" alt="Actividades para grupos en Málaga este verano en la Plaza de Toros de Torremolinos"></picture>
@@ -270,12 +306,12 @@
           <div class="blog-card__body">
             <span class="blog-card__meta">17 jun 2026 · 5 min · Planes de grupo</span>
             <span class="blog-card__title">Actividades para grupos en Málaga este verano: los planazos de Plaza Paraíso</span>
-            <span class="blog-card__excerpt">Loco Bongo, Furor The Show y Bresh son los mejores planes para venir con amigos a Torremolinos: tardeo, concursos y la fiesta más linda, al aire libre en la Plaza de Toros.</span>
+            <span class="blog-card__excerpt">Loco Bongo, Furor The Show y Bresh son los mejores planes para venir con amigos a Torremolinos: tardeo, concursos y la fiesta más linda del mundo, al aire libre en la Plaza de Toros.</span>
             <span class="blog-card__more">Leer el artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
           </div>
         </a>
 
-        <a class="blog-card" href="blog-furor-the-show-malaga.html" data-track="post-furor-show">
+        <a class="blog-card" href="blog/furor-the-show-malaga/index.html" data-track="post-furor-show">
           <div class="blog-card__media">
             <span class="blog-card__tag">Ocio</span>
             <img width="1600" height="900" loading="lazy" decoding="async" src="assets/img/furor-hero.jpg" alt="Furor The Show con Alonso Caparrós en la Plaza de Toros de Torremolinos">
@@ -288,7 +324,7 @@
           </div>
         </a>
 
-        <a class="blog-card" href="blog-las-pilardos-malaga.html" data-track="post-las-pilardos">
+        <a class="blog-card" href="blog/las-pilardos-malaga/index.html" data-track="post-las-pilardos">
           <div class="blog-card__media">
             <span class="blog-card__tag">Teatro</span>
             <img width="1080" height="1350" loading="lazy" decoding="async" src="assets/img/pilardos.jpg" alt="Las Pilardos, Le Cocó y Megüi Yeillow, en Operación Marbella en Torremolinos">
@@ -301,7 +337,7 @@
           </div>
         </a>
 
-        <a class="blog-card" href="blog-planes-malaga-verano.html" data-track="post-planes-malaga">
+        <a class="blog-card" href="blog/planes-para-hacer-en-malaga-este-verano/index.html" data-track="post-planes-malaga">
           <div class="blog-card__media">
             <span class="blog-card__tag">Guía</span>
             <picture><source type="image/webp" srcset="assets/img/lineup-poster.webp"><img width="4500" height="5626" loading="lazy" decoding="async" src="assets/img/lineup-poster.png" alt="Los mejores planes para hacer en Málaga este verano en la Costa del Sol"></picture>
@@ -314,7 +350,7 @@
           </div>
         </a>
 
-        <a class="blog-card" href="blog-curiosidades-plaza-toros-torremolinos.html" data-track="post-curiosidades-plaza">
+        <a class="blog-card" href="blog/curiosidades-plaza-de-toros-torremolinos/index.html" data-track="post-curiosidades-plaza">
           <div class="blog-card__media">
             <span class="blog-card__tag">Torremolinos</span>
             <img width="2000" height="595" loading="lazy" decoding="async" src="uploads/3.jpg" alt="Vista panorámica del ruedo y los tendidos de la plaza de toros de Torremolinos">
@@ -323,6 +359,19 @@
             <span class="blog-card__meta">18 jun 2026 · 5 min · Torremolinos</span>
             <span class="blog-card__title">5 curiosidades de la plaza de toros de Torremolinos que (casi) nadie conoce</span>
             <span class="blog-card__excerpt">Historia, arquitectura, su reinvención como espacio de ocio y el festival que la llena este verano. Los secretos mejor guardados de uno de los espacios más singulares de la Costa del Sol.</span>
+            <span class="blog-card__more">Leer el artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a class="blog-card" href="blog/dia-perfecto-torremolinos/index.html" data-track="post-dia-perfecto">
+          <div class="blog-card__media">
+            <span class="blog-card__tag">Guía</span>
+            <img width="1376" height="600" loading="lazy" decoding="async" src="uploads/centro-de-torremolinos-2.png" alt="Calle del centro de Torremolinos, guía hora por hora para un día perfecto">
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">18 jun 2026 · 8 min · Guía</span>
+            <span class="blog-card__title">Cómo pasar un día perfecto en Torremolinos: guía hora por hora</span>
+            <span class="blog-card__excerpt">Playa, espetos, beach club, tardeo y festival: el itinerario para exprimir un día completo en Torremolinos, de la mañana en la Calle San Miguel a la tarde-noche en la Plaza de Toros.</span>
             <span class="blog-card__more">Leer el artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
           </div>
         </a>
