@@ -528,12 +528,12 @@ button { font-family: inherit; }
   background: linear-gradient(to top, rgba(17,22,44,.88) 0%, rgba(17,22,44,0) 58%);
 }
 .event-card__tag { position: absolute; top: 14px; left: 14px; z-index: 2; }
-.event-card .wave { position: absolute; bottom: 0; left: 0; z-index: 2; height: clamp(18px,2.4vw,26px); }
+.event-card .wave { position: absolute; bottom: 0; left: 0; z-index: 4; height: clamp(18px,2.4vw,26px); width: 100%; }
 .event-card__label {
   position: relative;
   z-index: 3;
   background: var(--cream-50);
-  padding: 10px 14px 12px;
+  padding: 10px 14px clamp(22px,2.8vw,32px);
   text-align: center;
 }
 .event-card__kicker { font-size: 0.7rem; font-weight: var(--fw-bold); color: var(--navy-500); text-transform: uppercase; letter-spacing: .08em; }
