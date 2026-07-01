@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Redirige /api/* a las Netlify Functions manteniendo la URL limpia
+[[redirects]]
+  from = "/api/eventos"
+  to   = "/.netlify/functions/fourvenues-events"
+  status = 200
+
+# Pretty URLs para páginas HTML (sin extensión)
+[[redirects]]
+  from = "/blog/:slug"
+  to   = "/blog/:slug/index.html"
+  status = 200
