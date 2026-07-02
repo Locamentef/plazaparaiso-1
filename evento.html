@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P6BSNSRF');</script>
+<title>Comprar entradas · Plaza Paraíso Torremolinos 2026</title>
+<meta name="description" content="Compra tus entradas para los eventos de Plaza Paraíso Torremolinos 2026.">
+<link rel="canonical" href="https://www.plazaparaiso.com/evento">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1b2240">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<style>
+  html, body { margin: 0; overflow-x: hidden; max-width: 100%; }
+  body { background: var(--cream, #f7ead5); }
+  .ev-topbar {
+    background: var(--navy, #1b2240);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .ev-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cream, #f7ead5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    transition: opacity 0.15s;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  .ev-back:hover { opacity: 1; }
+  .ev-logo { margin-left: auto; opacity: 0.5; }
+  .ev-logo img { height: 28px; width: auto; display: block; }
+  .ev-widget { min-height: calc(100vh - 56px); width: 100%; max-width: 100%; overflow-x: hidden; box-sizing: border-box; }
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6BSNSRF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="ev-topbar">
+  <button class="ev-back" id="js-back" type="button" aria-label="Volver">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M19 12H5"/><path d="m12 19-7-7 7-7"/>
+    </svg>
+    Volver
+  </button>
+  <div class="ev-logo">
+    <picture>
+      <source type="image/webp" srcset="assets/img/logo-verano.webp">
+      <img src="assets/img/logo-verano.png" alt="Plaza Paraíso" height="28">
+    </picture>
+  </div>
+</div>
+
+<div class="ev-widget">
+  <script src="https://www.fourvenues.com/assets/iframe/locamente" type="text/javascript"></script>
+</div>
+
+<script>
+(function () {
+  // Botón volver: solo navega atrás si el referrer es del mismo dominio
+  var backBtn = document.getElementById('js-back');
+  var fallback = '/programa';
+  var ref = document.referrer;
+  var sameDomain = ref && (new URL(ref).hostname === window.location.hostname);
+
+  backBtn.addEventListener('click', function () {
+    if (sameDomain && window.history.length > 1) {
+      window.history.back();
+    } else {
+      window.location.href = fallback;
+    }
+  });
+
+  // Si no viene hash #events/... redirigir
+  var hash = window.location.hash;
+  if (!hash || !hash.startsWith('#events/')) {
+    window.location.replace(sameDomain && ref ? ref : fallback);
+  }
+})();
+</script>
+
+<script src="cookies.js"></script>
+<script src="assets/js/consent.js" defer></script>
+<script src="assets/js/tracking.js" defer></script>
+</body>
+</html>
