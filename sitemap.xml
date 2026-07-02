@@ -294,6 +294,24 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.plazaparaiso.com/blog/que-hacer-torremolinos-noche-verano</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.plazaparaiso.com/blog/que-hacer-torremolinos-noche-verano"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.plazaparaiso.com/en/blog/things-to-do-in-torremolinos-at-night"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.plazaparaiso.com/blog/que-hacer-torremolinos-noche-verano"/>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.plazaparaiso.com/en/blog/things-to-do-in-torremolinos-at-night</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.plazaparaiso.com/blog/que-hacer-torremolinos-noche-verano"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.plazaparaiso.com/en/blog/things-to-do-in-torremolinos-at-night"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.plazaparaiso.com/blog/que-hacer-torremolinos-noche-verano"/>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.plazaparaiso.com/en/blog/little-italy-torremolinos</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.plazaparaiso.com/blog/little-italy-torremolinos"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.plazaparaiso.com/en/blog/little-italy-torremolinos"/>

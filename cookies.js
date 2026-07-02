@@ -6,7 +6,7 @@
    Un enlace con [data-cookie-settings] reabre el banner.
    ============================================================ */
 window.PLP_GA_ID    = "G-BHMT2HPE9S";     // Google Analytics 4
-window.PLP_PIXEL_ID = "1682488766224635"; // Meta / Facebook Pixel
+window.PLP_PIXEL_ID = "1715018873258485"; // Meta / Facebook Pixel
 
 (function () {
   "use strict";
