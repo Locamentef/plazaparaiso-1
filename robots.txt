@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-# Páginas legales no indexables se controlan por meta robots
-Disallow: /_ds/
-
-Sitemap: https://www.plazaparaiso.com/sitemap.xml
