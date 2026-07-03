@@ -194,25 +194,44 @@
 
   <section class="section section--cream" aria-labelledby="vivir-title">
     <div class="container">
-      <div class="ev-intro">
-        <span class="eyebrow">Qué vas a vivir</span>
-        <h2 class="section-title" id="vivir-title" style="margin:var(--space-2) 0 var(--space-4);">con Alonso Caparrós</h2>
-        <p class="ev-intro__lead">El concurso musical más mítico de la tele, ahora en directo y presentado por Alonso Caparrós.</p>
-        <p class="ev-intro__body">¿Te sabes la canción? Demuéstralo. Un show interactivo lleno de música donde el público es el protagonista. Diversión asegurada para toda la familia.</p>
+      <div style="display:flex;align-items:center;gap:var(--space-6);flex-wrap:wrap;">
+        <div class="ev-intro" style="flex:1;min-width:280px;">
+          <span class="eyebrow">Qué vas a vivir</span>
+          <h2 class="section-title" id="vivir-title" style="margin:var(--space-2) 0 var(--space-4);">con Alonso Caparrós</h2>
+          <p class="ev-intro__lead">El concurso musical más mítico de la tele, ahora en directo y presentado por Alonso Caparrós.</p>
+          <p class="ev-intro__body">¿Te sabes la canción? Demuéstralo. Un show interactivo lleno de música donde el público es el protagonista. Diversión asegurada para toda la familia.</p>
+        </div>
+        <div style="flex:0 0 auto;max-width:220px;width:100%;align-self:flex-end;">
+          <img src="uploads/alonso caparros.png" alt="Alonso Caparrós presentador de Furor The Show, con chaqueta de lentejuelas rosa y micrófono en mano" width="640" height="960" style="width:100%;height:auto;display:block;">
+        </div>
       </div>
-      <div class="ev-highlights">
-        <article class="ev-hl">
-          <div class="ev-hl__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
-          <h3>Concurso en vivo</h3><p>Adivina las canciones y participa desde tu asiento.</p>
-        </article>
-        <article class="ev-hl">
-          <div class="ev-hl__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
-          <h3>EVENTO +18</h3><p>¡Los peques tendrán que esperar!</p>
-        </article>
-        <article class="ev-hl">
-          <div class="ev-hl__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg></div>
-          <h3>Domingos de agosto</h3><p>Varias funciones a lo largo del mes.</p>
-        </article>
+    </div>
+  </section>
+
+  <section class="section section--cream-50" aria-labelledby="video-title">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Avance</span>
+        <h2 class="section-title" id="video-title">Vívelo en vídeo</h2>
+      </div>
+      <div class="split ev-video-split">
+        <div class="reels__phone" style="max-width:360px;">
+          <input type="checkbox" id="furor-video-play" class="reels__toggle" aria-hidden="true">
+          <label class="reels__cover" for="furor-video-play" aria-label="Reproducir el vídeo de Furor The Show">
+            <img width="720" height="1280" decoding="async" loading="lazy" src="https://i.ytimg.com/vi/zJBjl3YUmO8/hqdefault.jpg" alt="Avance en vídeo de Furor The Show en Plaza Paraíso.">
+            <span class="reels__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="reels__tag">Ver vídeo</span>
+          </label>
+          <div class="reels__embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/zJBjl3YUmO8?autoplay=1&rel=0&playsinline=1&modestbranding=1" title="Furor The Show — Plaza Paraíso" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="ev-synopsis">
+          <p><strong>El tardeo oficial del mítico programa.</strong> ¿Te acuerdas de Furor? El programa estrella de la televisión de los 2000 que nos hizo cantar hasta desgañitarnos la voz ahora se convierte en el mejor plan de tarde todos los domingos de agosto en Torremolinos. Antes lo veías por la televisión, ¡ahora podrás disfrutarlo en vivo!</p>
+          <p>Furor The Show es una batalla en la que tú y los mayores hits seréis lxs protagonistas, porque aquí ¡todo el mundo canta!</p>
+          <p>Al frente, el icónico Alonso Caparrós que se encargará de presentar y ejercer de juez de los 2 equipos rivales. Y además: pruebas, nuestrxs azafatxs, Djs, temazos de todas las épocas, risas… ¿Te imaginas la que se va a liar?</p>
+          <p class="ev-synopsis__q">Elige a tu equipo y… ¡a cantar!</p>
+        </div>
       </div>
     </div>
   </section>
@@ -305,34 +324,6 @@
                  title="Furor The Show — Plaza Paraíso" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
              </div></div>
   -->
-  <section class="section section--cream-50" aria-labelledby="video-title">
-    <div class="container">
-      <div class="section-head section-head--center">
-        <span class="eyebrow">Avance</span>
-        <h2 class="section-title" id="video-title">Vívelo en vídeo</h2>
-      </div>
-      <div class="split ev-video-split">
-        <div class="reels__phone" style="max-width:360px;">
-          <input type="checkbox" id="furor-video-play" class="reels__toggle" aria-hidden="true">
-          <label class="reels__cover" for="furor-video-play" aria-label="Reproducir el vídeo de Furor The Show">
-            <img width="720" height="1280" decoding="async" loading="lazy" src="https://i.ytimg.com/vi/zJBjl3YUmO8/hqdefault.jpg" alt="Avance en vídeo de Furor The Show en Plaza Paraíso.">
-            <span class="reels__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-            <span class="reels__tag">Ver vídeo</span>
-          </label>
-          <div class="reels__embed">
-            <iframe src="https://www.youtube-nocookie.com/embed/zJBjl3YUmO8?autoplay=1&rel=0&playsinline=1&modestbranding=1" title="Furor The Show — Plaza Paraíso" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="ev-synopsis">
-          <p><strong>El tardeo oficial del mítico programa.</strong> ¿Te acuerdas de Furor? El programa estrella de la televisión de los 2000 que nos hizo cantar hasta desgañitarnos la voz ahora se convierte en el mejor plan de tarde todos los domingos de agosto en Torremolinos. Antes lo veías por la televisión, ¡ahora podrás disfrutarlo en vivo!</p>
-          <p>Furor The Show es una batalla en la que tú y los mayores hits seréis lxs protagonistas, porque aquí ¡todo el mundo canta!</p>
-          <p>Al frente, el icónico Alonso Caparrós que se encargará de presentar y ejercer de juez de los 2 equipos rivales. Y además: pruebas, nuestrxs azafatxs, Djs, temazos de todas las épocas, risas… ¿Te imaginas la que se va a liar?</p>
-          <p class="ev-synopsis__q">Elige a tu equipo y… ¡a cantar!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ====== FECHAS Y ENTRADAS (una tarjeta por función) ======
        Cada tarjeta enlaza a su página de compra en Fourvenues.
        Para añadir/editar una función: copia un <article class="date-card">…</article>,

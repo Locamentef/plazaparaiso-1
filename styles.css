@@ -539,6 +539,8 @@ button { font-family: inherit; }
 .event-card__kicker { font-size: 0.7rem; font-weight: var(--fw-bold); color: var(--navy-500); text-transform: uppercase; letter-spacing: .08em; }
 .event-card__name { font-size: var(--text-base); font-weight: var(--fw-black); color: var(--navy); text-transform: uppercase; line-height: 1.05; }
 .event-card__date { font-size: var(--text-xs); font-weight: var(--fw-extra); color: var(--orange); text-transform: uppercase; margin-top: 2px; }
+.event-card__buy { display: block; margin-top: var(--space-2); background: var(--orange); color: #fff; font-family: var(--font-sans); font-weight: var(--fw-black); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: .06em; padding: .5em 1em; border-radius: var(--radius-pill); text-align: center; }
+.event-card:hover .event-card__buy { background: #d46e0a; }
 
 /* ============================================================
    12 · FILTER CHIPS (static anchors, programme)

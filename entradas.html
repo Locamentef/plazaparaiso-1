@@ -133,11 +133,64 @@
 
 <main id="main">
 
-  <section class="pagehero palm-bg">
+  <section class="pagehero palm-bg" style="padding-block:clamp(1rem,2.5vw,1.75rem) clamp(.75rem,1.5vw,1.25rem);">
     <div class="container">
       <span class="eyebrow">Asegura tu sitio</span>
-      <h1>Comprar entradas · Plaza Paraíso Torremolinos</h1>
-      <p class="lead" style="margin-inline:auto;">Elige cómo vives el verano: una tarde concreta, todo el ciclo con el abono, o un plan en grupo. Compra anticipada recomendada — muchos eventos cuelgan el completo.</p>
+      <h1 style="font-size:var(--text-xl);">Comprar entradas · Plaza Paraíso Torremolinos</h1>
+    </div>
+  </section>
+
+  <!-- Events grid -->
+  <section class="section section--cream section--tight" aria-labelledby="eventos-cards-title">
+    <div class="container">
+      <div class="section-head section-head--center" style="margin-bottom:var(--space-5);">
+        <span class="eyebrow">Del 25 Jul al 13 Sep 2026</span>
+        <h2 class="section-title" id="eventos-cards-title">Elige tu evento</h2>
+      </div>
+      <div class="events-grid events-grid--four">
+        <a class="event-card" href="locobongo.html" data-track="evento-loco-bongo" aria-label="Loco Bongo — Todos los sábados y más fechas">
+          <span class="tag tag--ocio event-card__tag">Ocio</span>
+          <div class="event-card__media"><picture><source type="image/webp" srcset="assets/opt/locobongo.webp"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/locobongo.jpg" alt="Fiesta Loco Bongo con ambiente de verano en la Plaza de Toros de Torremolinos."></picture></div>
+          <div class="wave" aria-hidden="true"></div>
+          <div class="event-card__label"><div class="event-card__kicker">Y especiales</div><div class="event-card__name">Loco Bongo</div><div class="event-card__date">SÁBADOS Y MÁS</div><span class="event-card__buy">Comprar entradas</span></div>
+        </a>
+        <a class="event-card" href="furor.html" data-track="evento-furor" aria-label="Furor The Show — Domingos de agosto">
+          <span class="tag tag--ocio event-card__tag">Ocio</span>
+          <div class="event-card__media"><picture><source type="image/webp" srcset="assets/opt/furor.webp"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/furor.jpg" alt="Furor The Show, espectáculo musical en directo presentado por Alonso Caparrós."></picture></div>
+          <div class="wave" aria-hidden="true"></div>
+          <div class="event-card__label"><div class="event-card__kicker">con Alonso Caparrós</div><div class="event-card__name">Furor The Show</div><div class="event-card__date">Domingos Ago</div><span class="event-card__buy">Comprar entradas</span></div>
+        </a>
+        <a class="event-card" href="lauragallego.html" data-track="evento-laura" aria-label="Laura Gallego — Viernes 7 de agosto">
+          <span class="tag tag--musica event-card__tag">Música</span>
+          <div class="event-card__media"><picture><source type="image/webp" srcset="assets/opt/laura.webp"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/laura.jpg" alt="Laura Gallego cantando en directo en la Plaza de Toros de Torremolinos."></picture></div>
+          <div class="wave" aria-hidden="true"></div>
+          <div class="event-card__label"><div class="event-card__kicker">Concierto</div><div class="event-card__name">Laura Gallego</div><div class="event-card__date">Vie 7 Ago</div><span class="event-card__buy">Comprar entradas</span></div>
+        </a>
+        <a class="event-card" href="bresh.html" data-track="evento-bresh" aria-label="Bresh — Sábado 12 de septiembre">
+          <span class="tag tag--musica event-card__tag">Ocio</span>
+          <div class="event-card__media"><picture><source type="image/webp" srcset="assets/opt/bresh.webp"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/bresh.jpg" alt="Bresh, la fiesta argentina con escenario rosa neón."></picture></div>
+          <div class="wave" aria-hidden="true"></div>
+          <div class="event-card__label"><div class="event-card__kicker">La fiesta más linda del mundo</div><div class="event-card__name">Bresh</div><div class="event-card__date">Sáb 12 Sep</div><span class="event-card__buy">Comprar entradas</span></div>
+        </a>
+        <a class="event-card" href="laspilardos.html" data-track="evento-las-pilardos" aria-label="Las Pilardos — Viernes 21 de agosto">
+          <span class="tag tag--teatro event-card__tag">Teatro</span>
+          <div class="event-card__media"><picture><source type="image/webp" srcset="assets/opt/pilardos.webp"><img width="1600" height="2000" decoding="async" loading="lazy" src="assets/opt/pilardos.jpg" alt="Las Pilardos en Operación Marbella, espectáculo de teatro en Plaza Paraíso."></picture></div>
+          <div class="wave" aria-hidden="true"></div>
+          <div class="event-card__label"><div class="event-card__kicker">Operación Marbella</div><div class="event-card__name">Las Pilardos</div><div class="event-card__date">Vie 21 Ago</div><span class="event-card__buy">Comprar entradas</span></div>
+        </a>
+        <a class="event-card" href="siguelaluz.html" data-track="evento-sigue-la-luz" aria-label="Sigue la Luz — Jueves 13 de agosto">
+          <span class="tag tag--teatro event-card__tag">Teatro</span>
+          <div class="event-card__media"><picture><source type="image/webp" srcset="assets/opt/sigue.webp"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/sigue.jpg" alt="Espectáculo Sigue la Luz en el escenario de la Plaza de Toros de Torremolinos."></picture></div>
+          <div class="wave" aria-hidden="true"></div>
+          <div class="event-card__label"><div class="event-card__kicker">Xenon Spain · Paca la Piraña</div><div class="event-card__name">Sigue la Luz</div><div class="event-card__date">Jue 13 Ago</div><span class="event-card__buy">Comprar entradas</span></div>
+        </a>
+        <a class="event-card" href="littleitaly.html" data-track="evento-little-italy" aria-label="Little Italy Gastro Fest — 27 y 28 de agosto">
+          <span class="tag tag--gastro event-card__tag">Gastro</span>
+          <div class="event-card__media"><picture><source type="image/webp" srcset="assets/opt/littleitaly.webp"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/littleitaly.jpg" alt="Little Italy Gastro Fest, festival gastronómico italiano en la Plaza de Toros de Torremolinos."></picture></div>
+          <div class="wave" aria-hidden="true"></div>
+          <div class="event-card__label"><div class="event-card__kicker">Festival gastronómico</div><div class="event-card__name">Little Italy</div><div class="event-card__date">Jue 27 · Vie 28 Ago</div><span class="event-card__buy">Comprar entradas</span></div>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -148,7 +201,7 @@
       <div class="tickets-grid">
         <article class="ticket">
           <h3>Por evento</h3>
-          <div class="ticket__price">18€<small> / desde</small></div>
+          <div class="ticket__price">12€<small> / desde</small></div>
           <p class="ticket__sub">Entra a la tarde que quieras. Precio según evento y artista.</p>
           <ul class="ticket__list">
             <li class="ticket__feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Acceso a un evento a elegir</span></li>
@@ -298,6 +351,7 @@
   <script src="assets/js/tracking.js" defer></script>
   <script src="assets/js/lang.js" defer></script>
 <script src="nav.js"></script>
+<script src="whatsapp.js"></script>
 <script src="assets/js/fv-modal.js" defer></script>
 </body>
 </html>
