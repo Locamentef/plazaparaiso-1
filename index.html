@@ -187,17 +187,11 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
   <!-- CINEMATIC HERO -->
   <section class="hero-cine" aria-labelledby="hero-title">
-    <!-- ====== VÍDEO DE FONDO DEL HERO ======
-         El vídeo se reproduce solo, silenciado y en bucle. La imagen `poster`
-         se ve mientras carga y como respaldo si el vídeo no está disponible.
-         Para cambiarlo: edita el src del <source>. Puedes usar la URL remota
-         (la de abajo) o, mejor para producción, descargar el .mp4 a
-         assets/video/ y apuntar ahí: src="assets/video/cabecera.mp4".
-    -->
+    <!-- ====== VÍDEO DE FONDO DEL HERO (YouTube, autoplay inmediato) ====== -->
     <div class="hero-cine__bg" aria-hidden="true">
-      <video autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.min.jpg">
-        <source src="assets/video/cabecera.mp4" type="video/mp4">
-      </video>
+      <div class="hero-cine__embed hero-cine__embed--auto">
+        <iframe src="https://www.youtube-nocookie.com/embed/TfNTatLwY4w?autoplay=1&mute=1&loop=1&playlist=TfNTatLwY4w&controls=0&rel=0&playsinline=1&modestbranding=1&disablekb=1" title="Plaza Paraíso" loading="eager" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
     <div class="hero-cine__inner">
       <span class="eyebrow">25 Jul – 13 Sep · Torremolinos</span>
@@ -243,12 +237,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         <div class="reels__phone">
           <input type="checkbox" id="reels-play" class="reels__toggle" aria-hidden="true">
           <label class="reels__cover" for="reels-play">
-            <picture><source type="image/webp" srcset="assets/img/reels-malaga.webp"><img width="746" height="1348" decoding="async" loading="lazy" src="assets/img/reels-malaga.png" alt="Avance en vídeo: Málaga, Plaza Paraíso Torremolinos."></picture>
+            <img width="746" height="1348" decoding="async" loading="lazy" src="https://i.ytimg.com/vi/Y5TyMFQbG1c/hqdefault.jpg" alt="Avance en vídeo: Málaga, Plaza Paraíso Torremolinos.">
             <span class="reels__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
             <span class="reels__tag">Ver vídeo</span>
           </label>
           <div class="reels__embed">
-            <iframe src="https://www.youtube-nocookie.com/embed/HpmsuDVCkMw?autoplay=1&rel=0&playsinline=1&modestbranding=1" title="Plaza Paraíso · Málaga" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/Y5TyMFQbG1c?autoplay=1&rel=0&playsinline=1&modestbranding=1" title="Plaza Paraíso · Málaga" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>
