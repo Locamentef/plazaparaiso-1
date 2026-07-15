@@ -11,6 +11,11 @@
   to   = "/.netlify/functions/fourvenues-events"
   status = 200
 
+[[redirects]]
+  from = "/api/fb-capi"
+  to   = "/.netlify/functions/fb-capi"
+  status = 200
+
 # Pretty URLs para páginas HTML (sin extensión)
 [[redirects]]
   from = "/blog/:slug"

@@ -70,9 +70,42 @@ window.PP_TRACK_CONFIG = window.PP_TRACK_CONFIG || {
 
   /* ---------- Emisores ---------- */
   function ga4(name, params) { if (GA_ON && loaded) try { gtag('event', name, params || {}); } catch (e) {} }
+
+  /* ---------- Meta: Pixel (navegador) + Conversions API (servidor) ----------
+     Mismo event_id en ambas vías = Meta deduplica y cuenta 1 solo evento.
+     La llamada al servidor es "fire and forget": si falla, no afecta al Pixel. */
+  function uuid() {
+    try { return crypto.randomUUID(); } catch (e) { return 'pp-' + Date.now() + '-' + Math.random().toString(16).slice(2); }
+  }
+  function getCookie(name) {
+    var m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : undefined;
+  }
+  function sendCapi(name, params, eventId) {
+    try {
+      navigator.sendBeacon && navigator.sendBeacon(
+        '/api/fb-capi',
+        new Blob([JSON.stringify({
+          event_name: name,
+          event_id: eventId,
+          event_source_url: location.href,
+          user_data: { fbp: getCookie('_fbp'), fbc: getCookie('_fbc') },
+          custom_data: params || {}
+        })], { type: 'application/json' })
+      );
+    } catch (e) {
+      // Silencioso: si /api/fb-capi no responde, el Pixel del navegador ya registró el evento.
+    }
+  }
   function meta(name, params, custom) {
     if (!FB_ON || !loaded) return;
-    try { custom ? fbq('trackCustom', name, params || {}) : fbq('track', name, params || {}); } catch (e) {}
+    var eventId = uuid();
+    try {
+      custom
+        ? fbq('trackCustom', name, params || {}, { eventID: eventId })
+        : fbq('track', name, params || {}, { eventID: eventId });
+    } catch (e) {}
+    sendCapi(name, params, eventId);
   }
   function log(label, data) { if (DEBUG) try { console.log('%c[PP-TRACK] ' + label, 'color:#ef7f11;font-weight:bold', data || ''); } catch (e) {} }
 

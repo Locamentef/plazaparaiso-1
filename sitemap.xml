@@ -56,6 +56,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.plazaparaiso.com/pase-paraiso</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.plazaparaiso.com/festival</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.plazaparaiso.com/festival"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.plazaparaiso.com/en/festival"/>
@@ -347,6 +353,12 @@
   <url>
     <loc>https://www.plazaparaiso.com/blog/10-motivos-bresh-torremolinos</loc>
     <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.plazaparaiso.com/blog/5-motivos-sigue-la-luz-torremolinos</loc>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

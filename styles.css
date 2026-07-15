@@ -675,6 +675,31 @@ a.cal-row:focus-visible { outline: 2px solid var(--navy); outline-offset: -2px; 
 .tickets-grid { display: grid; gap: var(--space-5); grid-template-columns: 1fr; }
 @media (min-width: 720px) { .tickets-grid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1040px) { .tickets-grid { grid-template-columns: repeat(3, 1fr); } }
+.tickets-grid--two { max-width: 760px; margin-inline: auto; }
+@media (min-width: 1040px) { .tickets-grid--two { grid-template-columns: 1fr 1fr; } }
+
+/* ============================================================
+   17b · PASE PARAÍSO — floating button (entradas.html)
+   ============================================================ */
+.pp-float {
+  position: fixed; left: 22px; bottom: 22px; z-index: 9985;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  background: var(--orange); color: #fff;
+  padding: 14px 24px; border-radius: var(--radius-pill);
+  text-decoration: none; box-shadow: 0 10px 32px rgba(239,127,17,.5), 0 4px 14px rgba(0,0,0,.3);
+  border: 2px solid rgba(255,255,255,.35);
+  animation: pp-float-pulse 2.4s ease-in-out infinite;
+  transition: transform .18s ease, background .18s ease;
+}
+.pp-float:hover { background: var(--orange-600); transform: scale(1.06); animation-play-state: paused; }
+.pp-float__stamp { font-size: .68rem; font-weight: var(--fw-extra); letter-spacing: .1em; text-transform: uppercase; color: var(--navy); }
+.pp-float__label { font-family: var(--font-condensed); font-size: 1.3rem; text-transform: uppercase; line-height: 1; }
+@keyframes pp-float-pulse {
+  0%, 100% { box-shadow: 0 10px 32px rgba(239,127,17,.5), 0 4px 14px rgba(0,0,0,.3); }
+  50% { box-shadow: 0 10px 40px rgba(239,127,17,.85), 0 4px 18px rgba(0,0,0,.35); }
+}
+@media (max-width: 600px) { .pp-float { left: 14px; bottom: 14px; padding: 11px 18px; } .pp-float__label { font-size: 1.1rem; } }
+@media (prefers-reduced-motion: reduce) { .pp-float { animation: none; } }
 
 .ticket {
   position: relative;
