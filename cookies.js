@@ -5,7 +5,6 @@
    Los píxeles solo se cargan tras ACEPTAR el banner (RGPD).
    Un enlace con [data-cookie-settings] reabre el banner.
    ============================================================ */
-window.PLP_GA_ID    = "G-BHMT2HPE9S";     // Google Analytics 4
 window.PLP_PIXEL_ID = "1715018873258485"; // Meta / Facebook Pixel
 
 (function () {
@@ -29,17 +28,7 @@ window.PLP_PIXEL_ID = "1715018873258485"; // Meta / Facebook Pixel
     if (window.PLP_TRACKERS_LOADED) return;
     window.PLP_TRACKERS_LOADED = true;
     window.PLP_CONSENT = true;
-    // Google Analytics 4
-    if (window.PLP_GA_ID) {
-      var s = document.createElement("script");
-      s.async = true;
-      s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.PLP_GA_ID;
-      document.head.appendChild(s);
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () { window.dataLayer.push(arguments); };
-      window.gtag("js", new Date());
-      window.gtag("config", window.PLP_GA_ID);
-    }
+    // Google Analytics 4 ya se carga desde assets/js/tracking.js (evita doble carga/doble page_view)
     // Meta (Facebook) Pixel
     if (window.PLP_PIXEL_ID) {
       !function (f, b, e, v, n, t, s) {

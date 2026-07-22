@@ -8,7 +8,6 @@
 
   var PHONE = '34617078728';
   var EVENTS = [
-    { id: 'laura-gallego',  label: 'Laura Gallego',          emoji: '🎤' },
     { id: 'bresh',          label: 'Bresh',                  emoji: '🎉' },
     { id: 'loco-bongo',     label: 'Loco Bongo',             emoji: '🥁' },
     { id: 'las-pilardos',   label: 'Las Pilardos – Op. Marbella', emoji: '💃' },
