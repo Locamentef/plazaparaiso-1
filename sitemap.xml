@@ -104,6 +104,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.plazaparaiso.com/laura</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.plazaparaiso.com/furor</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -175,6 +181,12 @@
   <url>
     <loc>https://www.plazaparaiso.com/blog/actividades-grupos-malaga</loc>
     <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.plazaparaiso.com/blog/laura-gallego-torremolinos</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
