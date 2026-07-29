@@ -1,0 +1,84 @@
+/* ============================================================
+   Plaza Paraíso · Base element defaults
+   Light reset + element baselines tuned to the brand.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--text-base);
+  line-height: var(--lh-normal);
+  color: var(--color-ink);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: var(--fw-black);
+  line-height: var(--lh-snug);
+  color: var(--color-ink);
+  text-wrap: balance;
+}
+
+p { margin: 0; text-wrap: pretty; }
+
+a { color: inherit; text-decoration: none; }
+
+img { display: block; max-width: 100%; }
+
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ---- Brand utility helpers ---- */
+
+/* Elegant Esther wordmark voice */
+.plp-display { font-family: var(--font-display); font-weight: 400; }
+
+/* Condensed stacked line-up word */
+.plp-stack {
+  font-family: var(--font-condensed);
+  text-transform: uppercase;
+  line-height: var(--lh-tight);
+  letter-spacing: 0.005em;
+}
+
+/* Eyebrow / lockup line — TORREMOLINOS 2026 */
+.plp-eyebrow {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  font-size: var(--text-sm);
+}
+
+/* Heavy category word — MÚSICA, TEATRO… */
+.plp-cat-word {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-black);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-wide);
+}
+
+/* Centered content container */
+.plp-container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* Cream palm-silhouette hero wash (decorative) */
+.plp-palm-bg {
+  background-color: var(--plp-cream-100);
+  background-image:
+    radial-gradient(ellipse 40% 60% at 8% 100%, var(--plp-cream-200) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 55% at 92% 100%, var(--plp-cream-200) 0%, transparent 60%);
+}

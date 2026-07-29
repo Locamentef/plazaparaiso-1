@@ -1,0 +1,65 @@
+/* ============================================================
+   Plaza Paraíso · Effects
+   Radii, shadows, the wave-divider motif, palm texture,
+   motion easing. Festival posters are paper-flat with soft
+   drop shadows on floating capsules.
+   ============================================================ */
+
+:root {
+  /* ---- Corner radii ---- */
+  --radius-sm:    8px;
+  --radius-md:    14px;
+  --radius-lg:    24px;
+  --radius-xl:    36px;
+  --radius-pill:  999px;     /* event-label capsules, buttons   */
+
+  /* ---- Shadows (soft, warm-tinted) ---- */
+  --shadow-sm:   0 1px 3px rgba(27, 34, 64, 0.10);
+  --shadow-md:   0 6px 18px rgba(27, 34, 64, 0.14);
+  --shadow-lg:   0 14px 40px rgba(27, 34, 64, 0.20);
+  --shadow-pill: 0 8px 22px rgba(27, 34, 64, 0.18);   /* floating capsule */
+  --shadow-inset-top: inset 0 2px 0 rgba(255, 255, 255, 0.4);
+
+  /* ---- Borders ---- */
+  --border-hair:  1px solid var(--surface-line);   /* @kind other */
+  --border-ink:   2px solid var(--plp-navy-800);   /* @kind other */
+
+  /* ---- Motion ---- */
+  --ease-out:     cubic-bezier(0.22, 1, 0.36, 1);   /* @kind other */
+  --ease-bounce:  cubic-bezier(0.34, 1.56, 0.64, 1);   /* @kind other */
+  --dur-fast:     140ms;   /* @kind other */
+  --dur-base:     240ms;   /* @kind other */
+  --dur-slow:     420ms;   /* @kind other */
+
+  /* ---- Overlays / protection gradients on photos ---- */
+  --scrim-bottom: linear-gradient(to top, rgba(17,22,44,0.85) 0%, rgba(17,22,44,0) 60%);   /* @kind other */
+  --scrim-top:    linear-gradient(to bottom, rgba(17,22,44,0.7) 0%, rgba(17,22,44,0) 50%);   /* @kind other */
+
+  /* ---- Palm-silhouette texture wash (cream hero backdrops) ---- */
+  --palm-tint:    var(--plp-cream-200);   /* @kind color */
+}
+
+/* ============================================================
+   WAVE DIVIDER — the signature torn-paper sea-edge motif.
+   Layered Mediterranean blue bands with a scalloped crest.
+   Drop <div class="plp-wave"></div> between full-bleed sections.
+   Flip with .plp-wave--flip. Recolor via --wave-* overrides.
+   ============================================================ */
+.plp-wave {
+  --wave-1: var(--plp-wave-foam);
+  --wave-2: var(--plp-wave-bright);
+  --wave-3: var(--plp-wave-mid);
+  --wave-4: var(--plp-wave-deep);
+  position: relative;
+  width: 100%;
+  height: clamp(28px, 5vw, 64px);
+  line-height: 0;
+  background:
+    radial-gradient(circle at 12px -6px, transparent 14px, var(--wave-1) 14px) repeat-x left top / 28px 18px,
+    linear-gradient(var(--wave-2), var(--wave-2)) no-repeat left 14px top / 100% 10px,
+    linear-gradient(var(--wave-3), var(--wave-3)) no-repeat left 22px top / 100% 14px,
+    linear-gradient(var(--wave-4), var(--wave-4)) no-repeat left 34px top / 100% 100%;
+}
+.plp-wave--flip { transform: scaleY(-1); }
+
+/* Reduced-motion safety is handled per-component; tokens carry no animation. */
