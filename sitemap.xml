@@ -98,12 +98,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.plazaparaiso.com/laspilardos</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.plazaparaiso.com/laura</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -116,12 +110,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.plazaparaiso.com/siguelaluz</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.plazaparaiso.com/littleitaly</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -129,12 +117,6 @@
   </url>
   <url>
     <loc>https://www.plazaparaiso.com/categoria-musica</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.plazaparaiso.com/categoria-teatro</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -159,6 +141,12 @@
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.plazaparaiso.com/blog/que-llevar-festival-verano-plaza-paraiso</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.plazaparaiso.com/blog/planes-verano-torremolinos</loc>
@@ -193,12 +181,6 @@
   <url>
     <loc>https://www.plazaparaiso.com/blog/furor-the-show-malaga</loc>
     <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.plazaparaiso.com/blog/las-pilardos-malaga</loc>
-    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -359,12 +341,6 @@
   <url>
     <loc>https://www.plazaparaiso.com/blog/10-motivos-bresh-torremolinos</loc>
     <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.plazaparaiso.com/blog/5-motivos-sigue-la-luz-torremolinos</loc>
-    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

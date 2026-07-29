@@ -10,9 +10,7 @@
   var EVENTS = [
     { id: 'bresh',          label: 'Bresh',                  emoji: '🎉' },
     { id: 'loco-bongo',     label: 'Loco Bongo',             emoji: '🥁' },
-    { id: 'las-pilardos',   label: 'Las Pilardos – Op. Marbella', emoji: '💃' },
     { id: 'furor',          label: 'Furor The Show',         emoji: '🌟' },
-    { id: 'sigue-la-luz',   label: 'Sigue la Luz',           emoji: '✨' },
     { id: 'little-italy',   label: 'Little Italy Gastrofest',emoji: '🍝' },
     { id: 'general',        label: 'Otra pregunta / General',emoji: '💬' }
   ];
