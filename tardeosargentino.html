@@ -126,6 +126,7 @@
   <section class="ev-hero ta-hero" aria-labelledby="ev-title">
     <div class="ev-hero__bg" aria-hidden="true"></div>
     <div class="ev-hero__inner">
+      <span class="ta-seal" aria-hidden="true">¡Al aire libre!</span>
       <span class="ev-hero__cat">Música</span>
       <p class="ev-hero__kicker">por Argentinos ATR</p>
       <h1 class="ev-hero__name" id="ev-title">Tardeo Argentinos ATR<span class="ev-hero__loc">Torremolinos · Entradas 2026</span></h1>
@@ -194,6 +195,8 @@
     body.ta-page { --navy: #14395c; --navy-900: #0d2740; --navy-700: #1d5382; --navy-500: #547a9b; --red: #d99b08; --red-700: #b57f05; --orange: #2f7fbd; --orange-600: #24659a; --amber: #f6b40e; --amber-200: #fbd87a; --cream: #eaf4fc; --cream-50: #f7fbff; --cream-200: #d3e6f5; --cream-line: #cbe0f0; --bg: #f7fbff; --bg-alt: #eaf4fc; --surface: #ffffff; --ink: #14395c; --ink-soft: #547a9b; --ink-invert: #eaf4fc; --accent: #2f7fbd; --line: #cbe0f0; }
     body.ta-page .site-header { background: rgba(13,39,64,.97); border-bottom-color: rgba(234,244,252,.12); }
     .ta-hero .ev-hero__cat { color: #fff; }
+    .ta-seal { position: absolute; top: var(--space-6); right: var(--space-6); z-index: 2; display: grid; place-items: center; width: 8.5rem; height: 8.5rem; padding: 0 1.2rem; text-align: center; text-transform: uppercase; font-weight: var(--fw-black); font-size: var(--text-sm); line-height: 1.05; letter-spacing: .04em; color: var(--navy-900); background: var(--amber); border-radius: 50%; box-shadow: var(--shadow-md); transform: rotate(-11deg); text-shadow: none; }
+    @media (max-width: 700px) { .ta-seal { width: 6.4rem; height: 6.4rem; font-size: var(--text-xs); top: var(--space-4); right: var(--space-4); } }
     .ta-hero .ev-hero__name { font-size: clamp(1.75rem, 4.4vw, 3.6rem); white-space: nowrap; }
     .ta-hero .ev-hero__loc { white-space: nowrap; }
     .ta-hero .ev-hero__bg { background: linear-gradient(180deg, rgba(13,39,64,.2) 0%, rgba(13,39,64,.12) 45%, rgba(13,39,64,.45) 100%), image-set(url("assets/opt/tardeo-atr-hero.webp") type("image/webp"), url("assets/opt/tardeo-atr-hero.jpg") type("image/jpeg")) center/cover no-repeat; }
@@ -236,7 +239,7 @@
         <div class="ev-buy__price">Desde 10,00 € <small>+ tasas</small></div>
         <p>Sábado 12 de septiembre · De 19:00 a 01:00 h · Plaza de Toros de Torremolinos · +18</p>
         <div class="ta-perks">
-          <div class="ta-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14l-1.5 7a5.5 5.5 0 0 1-11 0Z"/><path d="M12 15v5M8 20h8"/></svg><div><b>Copa incluida</b><span>Tu entrada incluye una consumición para brindar desde el minuto uno.</span></div></div>
+          <div class="ta-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14l-1.5 7a5.5 5.5 0 0 1-11 0Z"/><path d="M12 15v5M8 20h8"/></svg><div><b>Copa incluida</b><span>Tu entrada incluye una cerveza, agua, o refresco.</span></div></div>
           <div class="ta-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 21V7"/><path d="M12 7S9.5 3 7.5 3a2.5 2.5 0 0 0 0 5M12 7s2.5-4 4.5-4a2.5 2.5 0 0 1 0 5"/></svg><div><b>Sorteo camiseta de Argentina</b><span>Cada entrada participa en el sorteo de una camiseta de la selección argentina.</span></div></div>
         </div>
         <a class="btn btn--primary btn--lg" href="evento-tardeos.html#events/J20I" data-track="compra-entrada" style="margin-top:var(--space-6);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg> Comprar entrada</a>
