@@ -17,6 +17,11 @@ https://plazaparaiso.com/*  https://www.plazaparaiso.com/:splat   301!
 /blog-las-pilardos-malaga                       /blog                                             301!
 /blog-laura-gallego-torremolinos.html           /blog/laura-gallego-torremolinos                 301!
 /blog-laura-gallego-torremolinos                /blog/laura-gallego-torremolinos                 301!
+/bresh                                          /programa                                        301!
+/bresh.html                                     /programa                                        301!
+/blog/10-motivos-bresh-torremolinos             /blog                                             301!
+/blog-10-motivos-bresh-torremolinos             /blog                                             301!
+/blog-10-motivos-bresh-torremolinos.html        /blog                                             301!
 /laspilardos                                    /programa                                        301!
 /laspilardos.html                               /programa                                        301!
 /siguelaluz                                     /programa                                        301!
@@ -29,3 +34,5 @@ https://plazaparaiso.com/*  https://www.plazaparaiso.com/:splat   301!
 /blog-planes-malaga-verano                      /blog/planes-para-hacer-en-malaga-este-verano    301!
 /blog-planes-verano-torremolinos.html           /blog/planes-verano-torremolinos                 301!
 /blog-planes-verano-torremolinos                /blog/planes-verano-torremolinos                 301!
+/tardeos-argentinos                             /tardeosargentino                                301!
+/tardeos-argentinos.html                        /tardeosargentino                                301!

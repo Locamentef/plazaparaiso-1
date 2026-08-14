@@ -149,21 +149,14 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     },
     {
       "@type": "HowToStep",
-      "position": 4,
+      "position": 3,
       "name": "Little Italy · Gastro Fest",
       "text": "El sabor de Italia aterriza en Torremolinos. Dos días de gastronomía, ambiente y planes para compartir.",
       "url": "https://www.plazaparaiso.com/festival#tl-title"
     },
     {
       "@type": "HowToStep",
-      "position": 5,
-      "name": "Bresh, la fiesta más linda del mundo",
-      "text": "El fenómeno internacional llega a la plaza para una de las tardes más esperadas de toda la temporada.",
-      "url": "https://www.plazaparaiso.com/festival#tl-title"
-    },
-    {
-      "@type": "HowToStep",
-      "position": 6,
+      "position": 4,
       "name": "Cierre de verano",
       "text": "Loco Bongo despide la primera edición de Plaza Paraíso. Nos vemos el próximo verano en la plaza.",
       "url": "https://www.plazaparaiso.com/festival#tl-title"
@@ -343,12 +336,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       </div>
       <div class="ev-carousel">
         <div class="ev-carousel__track" data-ev-track tabindex="0" role="list" aria-label="Eventos de Plaza Paraíso 2026">
-          <a class="event-card" role="listitem" href="bresh.html" data-track="evento-bresh" aria-label="Bresh — sábado 12 de septiembre.">
-            <span class="tag tag--musica event-card__tag">Música</span>
-            <div class="event-card__media"><picture><source type="image/webp" srcset="assets/opt/bresh.webp"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/bresh.jpg" alt="Fiesta Bresh con escenario rosa neón y gran público."></picture></div>
-            <div class="wave" aria-hidden="true"></div>
-            <div class="event-card__label"><div class="event-card__kicker">La fiesta más linda</div><div class="event-card__name">Bresh</div><div class="event-card__date">Sáb 12 Sep</div></div>
-          </a>
           <a class="event-card" role="listitem" href="locobongo.html" data-track="evento-loco-bongo" aria-label="Loco Bongo — todos los sábados.">
             <span class="tag tag--ocio event-card__tag">Ocio</span>
             <div class="event-card__media"><picture><source type="image/webp" srcset="assets/opt/locobongo.webp"><img width="1080" height="1350" decoding="async" loading="lazy" src="assets/opt/locobongo.jpg" alt="Fiesta Loco Bongo con ambiente de verano."></picture></div>
@@ -441,6 +428,9 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     .lb-notice__icon svg { width: 24px; height: 24px; }
     .lb-notice p { font-size: var(--text-md); line-height: 1.45; margin: 0; text-wrap: pretty; }
     .lb-notice strong { font-weight: var(--fw-extra); text-transform: uppercase; letter-spacing: .01em; }
+    .strands--center{justify-items:center;text-align:center}
+    .strands--center .strand{max-width:340px}
+    @media (min-width:1000px){.strands--center{grid-template-columns:repeat(3,minmax(0,300px));justify-content:center}}
   </style>
 
   <!-- Strands -->
@@ -448,12 +438,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">El programa</span>
-        <h2 class="section-title" id="strands-title">Cuatro mundos, un verano</h2>
+        <h2 class="section-title" id="strands-title">Tres mundos, un verano</h2>
       </div>
-      <div class="strands">
+      <div class="strands strands--center">
         <a class="strand strand--musica" href="categoria-musica.html" data-track="cat-musica" aria-label="Ver eventos de Música"><div class="strand__num">01</div><h3>Música</h3><p>Programación en directo para todos los gustos.</p></a>
-        <a class="strand strand--gastro" href="categoria-gastronomia.html" data-track="cat-gastro" aria-label="Ver eventos de Gastronomía"><div class="strand__num">03</div><h3>Gastronomía</h3><p>Sabores y buen rollo para compartir.</p></a>
-        <a class="strand strand--ocio" href="categoria-ocio.html" data-track="cat-ocio" aria-label="Ver eventos de Ocio"><div class="strand__num">04</div><h3>Ocio</h3><p>Mucho más que cultura. Planes para disfrutar con amigos, en pareja o en familia todo el verano.</p></a>
+        <a class="strand strand--gastro" href="categoria-gastronomia.html" data-track="cat-gastro" aria-label="Ver eventos de Gastronomía"><div class="strand__num">02</div><h3>Gastronomía</h3><p>Sabores y buen rollo para compartir.</p></a>
+        <a class="strand strand--ocio" href="categoria-ocio.html" data-track="cat-ocio" aria-label="Ver eventos de Ocio"><div class="strand__num">03</div><h3>Ocio</h3><p>Mucho más que cultura. Planes para disfrutar con amigos, en pareja o en familia todo el verano.</p></a>
       </div>
     </div>
   </section>
@@ -489,8 +479,8 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         <div class="tl-item tl-item--musica">
           <span class="tl-item__dot"></span>
           <div class="tl-item__date">Sáb 12 Sep</div>
-          <h3>Bresh, la fiesta más linda del mundo</h3>
-          <p>El fenómeno internacional llega a la plaza para una de las tardes más esperadas de toda la temporada.</p>
+          <h3><a href="tardeosargentino.html" data-track="evento-tardeos" style="color:inherit;">TARDEOS ARGENTINOS</a></h3>
+          <p>Cumbia, reggaetón y los himnos que suenan en Buenos Aires, en tardeo al aire libre en el ruedo. La penúltima tarde del verano.</p>
         </div>
         <div class="tl-item tl-item--ocio">
           <span class="tl-item__dot"></span>
@@ -658,7 +648,7 @@ Nos vemos el próximo verano en la plaza.</p>
           <div class="blog-card__body"><span class="blog-card__meta">18 jun 2026 · 5 min · Torremolinos</span><span class="blog-card__title">5 curiosidades de la plaza de toros de Torremolinos</span><span class="blog-card__excerpt">Historia, arquitectura y la reinvención del recinto que este verano acoge Plaza Paraíso.</span><span class="blog-card__more">Leer el artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></div>
         </a>
         <a class="blog-card" href="/blog/planes-verano-torremolinos" data-track="post-planes-verano">
-          <div class="blog-card__media"><span class="blog-card__tag">Planes</span><picture><source type="image/webp" srcset="assets/img/lineup-poster.webp"><img width="4500" height="5626" loading="lazy" decoding="async" src="assets/img/lineup-poster.png" alt="Cartel del line-up de Plaza Paraíso 2026 en la Plaza de Toros de Torremolinos"></picture></div>
+          <div class="blog-card__media"><span class="blog-card__tag">Planes</span><picture><source type="image/webp" srcset="assets/img/lineup-poster.webp"><img width="4500" height="5626" loading="lazy" decoding="async" src="assets/img/lineup-poster.png" alt="Cartel del line-up de Plaza Paraíso Torremolinos 2026 con Loco Bongo, Laura Gallego, Furor The Show, Little Italy Gastro Fest y Tardeos Argentinos en la Plaza de Toros, del 25 de julio al 13 de septiembre"></picture></div>
           <div class="blog-card__body"><span class="blog-card__meta">17 jun 2026 · 6 min · Planes de verano</span><span class="blog-card__title">Planes de verano en Torremolinos 2026: guía completa</span><span class="blog-card__excerpt">Todos los eventos del verano en la Plaza de Toros, evento a evento.</span><span class="blog-card__more">Leer el artículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></div>
         </a>
         <a class="blog-card" href="/blog/dia-perfecto-torremolinos" data-track="post-dia-perfecto">

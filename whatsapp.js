@@ -8,10 +8,10 @@
 
   var PHONE = '34617078728';
   var EVENTS = [
-    { id: 'bresh',          label: 'Bresh',                  emoji: '🎉' },
     { id: 'loco-bongo',     label: 'Loco Bongo',             emoji: '🥁' },
     { id: 'furor',          label: 'Furor The Show',         emoji: '🌟' },
     { id: 'little-italy',   label: 'Little Italy Gastrofest',emoji: '🍝' },
+    { id: 'argentinos-atr', label: 'Tardeo Argentinos ATR',  emoji: '🇦🇷' },
     { id: 'general',        label: 'Otra pregunta / General',emoji: '💬' }
   ];
 

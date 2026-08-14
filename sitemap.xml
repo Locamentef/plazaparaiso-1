@@ -86,12 +86,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.plazaparaiso.com/bresh</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.plazaparaiso.com/locobongo</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -100,6 +94,12 @@
   <url>
     <loc>https://www.plazaparaiso.com/laura</loc>
     <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.plazaparaiso.com/tardeosargentino</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -145,6 +145,12 @@
   <url>
     <loc>https://www.plazaparaiso.com/blog/que-llevar-festival-verano-plaza-paraiso</loc>
     <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.plazaparaiso.com/blog/eventos-torremolinos-septiembre</loc>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -337,12 +343,6 @@
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://www.plazaparaiso.com/blog/10-motivos-bresh-torremolinos</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.plazaparaiso.com/blog/little-italy-torremolinos</loc>

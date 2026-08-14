@@ -1337,7 +1337,7 @@ body.has-buybar { padding-bottom: 86px; }
 .date-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 @media (min-width: 640px) { .date-card { flex-basis: clamp(200px, 40vw, 240px); } }
 @media (min-width: 900px) { .date-card { flex-basis: calc((100% - 3 * var(--space-4)) / 4); } }
-@media (min-width: 640px) { .ev-dates__track { justify-content: center; } }
+@media (min-width: 640px) { .ev-dates__track { justify-content: safe center; } }
 .date-card__media { position: relative; aspect-ratio: 3 / 2; overflow: hidden; }
 .date-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .date-card__body { padding: var(--space-4); display: flex; flex-direction: column; gap: 2px; flex: 1; }
